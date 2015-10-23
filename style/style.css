@@ -1,0 +1,340 @@
+/**************************************
+
+	TABLE OF CONTENT:
+		Universale tags
+		Klasser og ID
+		Kolonner
+		Header
+		Mobile menu
+		Banner
+		Content
+		Footer
+		Media Queries
+
+***************************************/
+
+
+
+/***************
+Universale Tags
+***************/
+body{
+	background-image:url("../images/lake.jpg");
+	background-repeat:no-repeat;
+	background-position: center top;
+	background-size: 130%;
+	font-family:helvetica;
+	margin:auto;
+	max-width:2000px;
+	width:100%;
+}
+h1, h2, h3{
+	
+}
+
+a{
+	text-decoration:none;
+}
+
+/***************
+KLASSER OG ID
+***************/
+.button{
+	text-align:center;
+	width:30%;
+	background-color:gray;
+	color:white;
+	border:1px solid transparent;
+	border-radius:0.2em;
+	padding-top:1em;
+	padding-bottom:1em;
+	margin-left:0.5%;
+	margin-right:0.5%;
+	cursor:pointer;
+}
+
+.button:hover{
+	border:1px solid white;
+}
+
+#showHideMenuBtn{
+	display: none;
+}
+
+
+/***************
+KOLONNER
+***************/
+.wrapper{
+	width:85%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex; 
+	justify-content: center; 
+	margin: 0 auto;
+}
+
+.col-1{
+	width:40%;	
+}
+.col-1 img{
+	width:50%;
+	margin:25%;
+	margin-top:4em;
+}
+.col-2{
+	width:40%;
+}
+
+.col-2 img{
+	width:95%;
+}
+
+
+/***************
+HEADER
+***************/
+header{
+	background-color: rgba(0,0,0,0.4);
+	width:100%;
+	height:8em;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex; 
+
+}
+
+#logo{
+	width:14em;
+}
+#logo img{
+	width:100%;
+
+}
+
+nav{
+/*	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;*/
+	width:50%;
+	/*height: 3.25em;*/
+	margin-top:2.5em;
+
+}
+#menuBtns{
+	width: 100%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex; 
+	justify-content: center;
+}
+
+
+/* Class button er definert i "Universale tags" */
+
+#lang{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	margin:1em;
+	line-height:1em;
+}
+.langBtn{
+	margin:0.5em;
+	color:white;
+}
+#nor{
+	
+}
+#eng{
+	
+}
+#ger{
+	
+}
+.flag{
+	width:1.5em;
+}
+
+
+/***************
+BANNER
+***************/
+#banner{
+	width:100%;	
+}
+
+#banner .col-2{
+	margin-top:15%;
+	color: white;
+
+	/* Skal vi ha text-shadow?*/
+    text-shadow:
+    -1px -1px 3px #000,
+    1px -1px 3px #000,
+    -1px 1px 3px #000,
+    1px 1px 3px #000; 
+	
+}
+#banner ul{
+	font-size:1.2em;
+	line-height:1.5em;
+}
+
+#bannerBtns{
+	float:left;
+	width:80%;
+	margin-left:10%;
+	margin-top:15%;
+}
+
+#bannerBtns a{
+	float:left;
+	width:30%;
+	border:1px solid white;
+	text-align:center;
+	border-radius:0.2em;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	cursor:pointer;
+}
+
+#downloadBtn{
+	background-color:#0015FF; /* Vet ikke om denne fargen er den best. Vi faar diskutere det.*/
+	text-shadow: none;
+	color: white;
+}
+#downloadBtn:hover{
+
+}
+#readBtn{
+	background-color:black;
+	margin-left:20%;
+}
+
+#readBtn:hover{
+background-color:gray; /* Muligvis annen farge paa denne knappen ogsaa? */
+}
+
+
+/***************
+CONTENT
+***************/
+#content-1{
+	background-color:white;
+	width:100%;
+}
+
+/***************
+FOOTER
+***************/
+footer{
+	background-color:gray;
+	height:auto;
+}
+
+/***************
+MEDIA QUERIES
+Smarttelefon: 0 px - 480 px
+Nettbrett: 481 px - 768 px
+Desktop: 769 px 
+***************/
+@media screen and (max-width:769px){
+	body{
+		background-size:200%;
+	}
+	header div.wrapper{
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+		/*Slik at kolonnene i innholdsavdelingen blir brukket opp*/
+	[id*="content-"] .wrapper{
+		flex-direction: column;
+	}
+
+
+	nav{
+		width:100%;
+		margin:0;
+		order:3;
+	}
+	#menuBtns{
+	justify-content: space-around;
+	}
+
+	.button{
+	width:31%;
+	}
+
+
+	[class*="col"]{
+		width: 100%
+	}
+}
+
+@media screen and (max-width:481px){
+	.hideMobile{
+		display: none !important;
+	}
+	body{
+		margin:auto;
+		background-size:250%;
+	}
+	header{
+		height: auto;
+		padding-bottom: 1em;
+	}
+
+	#lang{
+		width:100%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	/***************
+	MOBILE MENU
+	***************/
+
+	#showHideMenuBtn{
+		border:1px solid white;
+		display: block;
+		/*-webkit-transition: all 1s ease; /* Firefox */
+	  	/*-moz-transition: all 1s ease; /* WebKit */
+	  	/*-o-transition: all 1s ease; /* Opera */
+	  	/*transition: all 1s ease; /* Standard */
+	}
+
+	#menuBtns{
+		flex-direction: column;
+		-webkit-transition: height 0.5s ease; /* Firefox */
+	  	-moz-transition: height 0.5s ease; /* WebKit */
+	  	-o-transition: height 0.5s ease; /* Opera */
+	  	transition: height 0.5s ease; /* Standard */
+	}
+	.button{
+		width:100%;
+		border-top:1px solid white;
+		text-align:center;
+		padding: 0.5em 0em 0.5em 0em;
+	}
+
+	.synlig{
+		overflow:hidden;
+		height:110px;
+	}
+
+	.usynlig{
+		overflow:hidden;
+		height: 0px;
+	}
+
+
+
+	#banner .col-2{
+		margin:5%;
+		width:95%;
+	}
+}
