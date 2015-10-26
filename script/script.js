@@ -42,3 +42,13 @@ function visMobilMeny(){
 /*var meny = document.getElementById("menuBtns");
   (meny.className === "synlig") ? meny.className = "usynlig" : meny.className = "";
 */
+
+function changeLang(clickedButton){
+	if (clickedButton == "eng") {	
+		window.location="./index-en.html";
+	}else if (clickedButton == "ger") {	
+		window.location="./index-ger.html";
+	}else {	
+		window.location="./"; //NORSK
+	}
+}
