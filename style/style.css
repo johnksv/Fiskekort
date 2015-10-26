@@ -270,6 +270,8 @@ Desktop: 769 px
 	}
 
 
+
+
 	[class*="col"]{
 		width: 100%
 	}
@@ -292,6 +294,12 @@ Desktop: 769 px
 		width:100%;
 		flex-direction: row;
 		justify-content: space-between;
+	}
+	#content-1{
+		width:100%;
+	}
+	footer{
+		width:100%;
 	}
 
 	/***************
