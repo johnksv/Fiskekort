@@ -38,7 +38,7 @@ KLASSER OG ID
 ***************/
 .button{
 	text-align:center;
-	width:10em;
+	width:30%;
 	background-color:gray;
 	color:white;
 	border:1px solid transparent;
@@ -67,7 +67,7 @@ KOLONNER
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex; 
-	justify-content: space-around; 
+	justify-content: center; 
 	margin: 0 auto;
 }
 
@@ -253,7 +253,6 @@ Desktop: 769 px
 		/*Slik at kolonnene i innholdsavdelingen blir brukket opp*/
 	[id*="content-"] .wrapper{
 		flex-direction: column;
-		padding-bottom: 1em;
 	}
 
 
@@ -291,27 +290,16 @@ Desktop: 769 px
 		padding-bottom: 1em;
 	}
 
-	.wrapper{
-		width: 90%;
-	}
-	#logo{
-		width: 100%;
-	}
 	#lang{
 		width:100%;
 		flex-direction: row;
 		justify-content: space-between;
 	}
-<<<<<<< HEAD
-	.langBtn{
-		margin: 0em;
-=======
 	#content-1{
 		width:100%;
 	}
 	footer{
 		width:100%;
->>>>>>> 4b3187cfff64e82c4367dde41691403e254d8116
 	}
 
 	/***************
@@ -328,7 +316,7 @@ Desktop: 769 px
 	}
 
 	#menuBtns{
-		/*flex-direction: column;*/
+		flex-direction: column;
 		-webkit-transition: height 0.5s ease; /* Firefox */
 	  	-moz-transition: height 0.5s ease; /* WebKit */
 	  	-o-transition: height 0.5s ease; /* Opera */
@@ -336,7 +324,7 @@ Desktop: 769 px
 	}
 	.button{
 		width:100%;
-		/*border-top:1px solid white;*/
+		border-top:1px solid white;
 		text-align:center;
 		padding: 0.5em 0em 0.5em 0em;
 	}

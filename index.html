@@ -12,14 +12,15 @@
 			<header>
 				<div class="wrapper">
 					<div id="logo">
-						<img src="http://placehold.it/264x64">
+						<img src="images/logo.png">
 					</div> <!-- Slutt på #logo -->
 
-					<nav>
-							<div id="menuBtns">
+					<nav class="">
+							<a id="showHideMenuBtn" class="button" onClick="visMobilMeny()">Vis meny</a>
+							<div id="menuBtns" class="usynlig">
 								<a class="button" href="#">Forside</a>
-								<a class="button" href="#">For grunneiere</a>	
-								<a class="button" href="#">Last ned app</a>
+								<a class="button" href="grunneiere/">For Grunneiere</a>	
+								<a class="button" href="#">Las ned App</a>
 							</div>
 
 					</nav>
@@ -51,15 +52,17 @@
 						<div class="col-2">
 							<h2>Appen over alle apper</h2>
 							<ul>
+							<!-- Forslag -->
 								<li>Enkelt Kjøp av Fiskekort</li>
 								<li>Finn fiskekort til det nærmeste vannet</li>
 								<li>Få oversikt over vannets fisketyper</li>
 								<li>Kartet viser en geografisk oversikt over soner</li>
+								
+
 							</ul>
 							<div id="bannerBtns">
 								<a id="downloadBtn" href="#">Last ned</a>
 								<a id="readBtn" onClick="scrollNed()">Les mer</a>
-								<button>Les mer</button>
 							</div> <!-- End of #bannerbtns -->
 						</div> <!-- End of #col-2 -->
 					</div> <!-- End of .wrapper -->
