@@ -28,9 +28,6 @@ body{
 	max-width:2000px;
 	width:100%;
 }
-h1, h2, h3{
-	
-}
 
 a{
 	text-decoration:none;
@@ -224,7 +221,8 @@ CONTENT
 ***************/
 #content-1{
 	background-color:white;
-	width:100%;
+	width:80%;
+	margin:auto;
 }
 
 /***************
@@ -233,6 +231,8 @@ FOOTER
 footer{
 	background-color:gray;
 	height:auto;
+	width:80%;
+	margin:auto;
 }
 
 /***************
@@ -271,6 +271,8 @@ Desktop: 769 px
 	}
 
 
+
+
 	[class*="col"]{
 		width: 100%
 	}
@@ -300,8 +302,16 @@ Desktop: 769 px
 		flex-direction: row;
 		justify-content: space-between;
 	}
+<<<<<<< HEAD
 	.langBtn{
 		margin: 0em;
+=======
+	#content-1{
+		width:100%;
+	}
+	footer{
+		width:100%;
+>>>>>>> 4b3187cfff64e82c4367dde41691403e254d8116
 	}
 
 	/***************
