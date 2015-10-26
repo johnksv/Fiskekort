@@ -60,7 +60,9 @@ KLASSER OG ID
 #showHideMenuBtn{
 	display: none;
 }
-
+#header_wrapper{
+	justify-content: space-between; 
+}
 
 /***************
 KOLONNER
@@ -70,9 +72,11 @@ KOLONNER
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex; 
-	justify-content: space-between; 
+	justify-content: center; 
 	margin: 0 auto;
 }
+
+
 
 .col-1{
 	width:40%;	
