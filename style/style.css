@@ -224,7 +224,8 @@ CONTENT
 ***************/
 #content-1{
 	background-color:white;
-	width:100%;
+	width:80%;
+	margin:auto;
 }
 
 /***************
@@ -233,6 +234,8 @@ FOOTER
 footer{
 	background-color:gray;
 	height:auto;
+	width:80%;
+	margin:auto;
 }
 
 /***************
