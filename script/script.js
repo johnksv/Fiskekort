@@ -1,9 +1,10 @@
+/*******************************
+	SCRIPT FOR SCROLLING
+********************************/
 var x = 0;
 var intervalId;
 var text;
 var textPos;
-
-
 
 function scrollNed(){
 	x=pageYOffset;
@@ -23,6 +24,10 @@ function smoothScroll(){
 	}
 	
 }
+
+/*******************************
+	SCRIPT FOR MENY
+********************************/
 
 function visMobilMeny(){
 	
