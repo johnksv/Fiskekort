@@ -49,6 +49,7 @@ KLASSER OG ID
 	margin-left:0.5%;
 	margin-right:0.5%;
 	cursor:pointer;
+	z-index:99;
 }
 
 .button:hover{
@@ -82,7 +83,7 @@ KOLONNER
 .col-1 img{
 	width:50%;
 	margin:1em;
-	//margin-top:4em;
+	margin-top:4em;
 }
 .col-2{
 	width:40%;
