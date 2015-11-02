@@ -40,7 +40,7 @@ KLASSER OG ID
 ***************/
 .button{
 	text-align:center;
-	width:33%;
+	width:25%;
 	/*background-color:gray;*/
 	color:white;
 
@@ -59,7 +59,8 @@ KLASSER OG ID
 	display: none;
 }
 #header_wrapper{
-	justify-content: space-between; 
+	width:100%;
+	justify-content: space-around; 
 }
 
 /***************
@@ -141,10 +142,9 @@ nav{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	margin-top:1.5em;
-	justify-content:flex-end;
-	width:30%;
+	flex-direction:column;
+	justify-content:space-around;
+	
 
 	
 }
@@ -154,9 +154,6 @@ nav{
 	display: -ms-flexbox;
 	display: flex;
 	flex-direction: row;
-	height:1em;
-
-	margin-left:10%;
 
 }
 #nor{
