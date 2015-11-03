@@ -5,6 +5,7 @@ var x = 0;
 var intervalId;
 var text;
 var textPos;
+var showLang = false;
 
 function scrollNed(){
 	x=pageYOffset;
@@ -47,3 +48,20 @@ function visMobilMeny(){
 /*var meny = document.getElementById("menuBtns");
   (meny.className === "synlig") ? meny.className = "usynlig" : meny.className = "";
 */
+
+function visLang(){
+	var lang = document.getElementById("lang");
+	var head = document.getElementsByTagName("header");
+
+		if(showLang){
+			lang.style.height = "1em";
+
+			showLang = false;
+		}
+		else{
+			lang.style.height = "6em";
+
+			showLang = true;
+		}
+
+}

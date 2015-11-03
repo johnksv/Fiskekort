@@ -23,7 +23,7 @@ body{
 	background-repeat:no-repeat;
 	background-position: center top;
 	background-size: 130%;
-	font-family:helvetica;
+	font-family: arial;
 	margin:auto;
 	max-width:2000px;
 	width:100%;
@@ -106,6 +106,8 @@ header{
 	display: -ms-flexbox;
 	display: flex; 
 
+
+
 }
 
 #logo{
@@ -138,15 +140,32 @@ nav{
 
 /* Class button er definert i "Universale tags" */
 
+
+/**************
+Language box
+***************/
+
 #lang{
+	
+	margin-top:1.5em;
+
+	height:1em;
+	overflow:hidden;
+	z-index:99;
+	-webkit-transition: height 0.5s ease; /* Firefox */
+	  	-moz-transition: height 0.5s ease; /* WebKit */
+	  	-o-transition: height 0.5s ease; /* Opera */
+	  	transition: height 0.5s ease; /* Standard */
+}
+#langBox{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	flex-direction:column;
-	justify-content:space-around;
-	
-
-	
+	justify-content:space-between;
+	height:6em;
+}
+#lang:hover{
 }
 .langBtn{
 	color:white;
@@ -154,7 +173,24 @@ nav{
 	display: -ms-flexbox;
 	display: flex;
 	flex-direction: row;
+	justify-content:space-between;
+	padding-bottom:1em;
+	cursor:pointer;
 
+	-webkit-transition: all 0.5s ease; /* Firefox */
+	  	-moz-transition: all 0.5s ease; /* WebKit */
+	  	-o-transition: all 0.5s ease; /* Opera */
+	  	transition: all 0.5s ease; /* Standard */
+
+
+}
+.langBtn:hover{
+	 text-shadow:
+    -1px -1px 3px #000,
+    1px -1px 3px #000,
+    -1px 1px 3px #000,
+    1px 1px 3px #000; 
+	color:#eeeeee;
 }
 #nor{
 	
@@ -280,8 +316,8 @@ Desktop: 769 px
 	justify-content: space-around;
 	}
 
-	.button{
-	width:31%;
+	.button{ 
+		width:33%;
 	}
 
 
