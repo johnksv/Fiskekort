@@ -51,15 +51,17 @@ function visMobilMeny(){
 
 function visLang(){
 	var lang = document.getElementById("lang");
-	var head = document.getElementsByTagName("header");
+	var head = document.getElementsByTagName("header")[0];
 
 		if(showLang){
 			lang.style.height = "1em";
-
+			//head.style.height = "4em";			
 			showLang = false;
+		
 		}
 		else{
 			lang.style.height = "6em";
+		//	head.style.height = "8em";
 
 			showLang = true;
 		}
