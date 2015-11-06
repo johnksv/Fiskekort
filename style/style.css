@@ -28,6 +28,7 @@ body{
 	margin:auto;
 	max-width:2000px;
 	width:100%;
+	position:relative;
 
 }
 
@@ -184,8 +185,8 @@ Language box
 	  	transition: all 0.5s ease; /* Standard */
 }
 #langBackground{
-	position:relative;
-	float:right;
+	position:absolute;
+	right:0;
 	z-index:-1;
 	width:12em;
 	height:0em;
@@ -365,14 +366,14 @@ Desktop: 769 px
 	}
 
 	#lang{
-		width:100%;
+		width:5em;
 		flex-direction: row;
 		justify-content: space-between;
 		padding:0 1em 1em 0;
 		margin-top:0;
 	}
 	.langBtn{
-		justify-content: flex-end;
+		/*justify-content: flex-end;*/
 	}
 	#content-1{
 		width:100%;
