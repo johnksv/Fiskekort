@@ -184,7 +184,9 @@ Language box
 	  	transition: all 0.5s ease; /* Standard */
 }
 #langBackground{
-	float:right;
+	position:absolute;
+	right:0;
+	z-index:-1;
 	width:12em;
 	height:0em;
 	background-color: rgba(0,0,0,0.4);
