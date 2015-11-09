@@ -5,7 +5,7 @@ var x = 0;
 var intervalId;
 var text;
 var textPos;
-var showLang = true;
+var showLang = false;
 
 visLang();
 
