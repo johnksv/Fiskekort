@@ -7,7 +7,7 @@ var text;
 var textPos;
 var showLang = false;
 
-visLang();
+
 
 function scrollNed(){
 	x=pageYOffset;
