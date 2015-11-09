@@ -5,7 +5,9 @@ var x = 0;
 var intervalId;
 var text;
 var textPos;
-var showLang = false;
+var showLang = true;
+
+visLang();
 
 function scrollNed(){
 	x=pageYOffset;
