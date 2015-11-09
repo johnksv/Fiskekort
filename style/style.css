@@ -271,12 +271,15 @@ BANNER
 #downloadBtn:hover{
 
 }
-#readBtn{
+.readBtn{
 	background-color:black;
 	margin-left:20%;
 }
+#readBtn2{
+	display:none;
+}
 
-#readBtn:hover{
+.readBtn:hover{
 background-color:gray; /* Muligvis annen farge paa denne knappen ogsaa? */
 }
 
