@@ -154,7 +154,7 @@ Language box
 	margin-top:1em;
 	height:2em;
 	overflow:hidden;
-	z-index:99;
+	z-index:1;
 	-webkit-transition: height 0.5s ease; /* Firefox */
 	  	-moz-transition: height 0.5s ease; /* WebKit */
 	  	-o-transition: height 0.5s ease; /* Opera */
@@ -223,10 +223,11 @@ BANNER
 	width:100%;	
 	margin-top: 1em;
     margin-bottom: 1em;
+    color: white;
 }
 
-#banner .col-2{
-	color: white;
+.text-shadow{
+	
 
 	/* Skal vi ha text-shadow?*/
    text-shadow:
@@ -245,26 +246,28 @@ BANNER
 	/*
 	STYLING AV KNAPPENE
 	*/
+	margin-top: 3em;
+	text-shadow: 0;
 }
 
-#bannerBtns a, #bannerBtns button{
-
+#bannerBtns a{
+	color: white;
+    padding: 1em;
+    background-color: saddlebrown;
+    border: 1px solid black;
 }
-#bannerBtns a:hover, #bannerBtns button:hover{
-
+#bannerBtns a:hover{
+	color:black;
+	background-color: #CFCFCF;
 }
 #downloadBtn{
 
 }
 
 #readBtn{
-	background-color:black;
 	margin-left:20%;
 }
 
-#readBtn:hover{
-background-color:gray; /* Muligvis annen farge paa denne knappen ogsaa? */
-}
 
 
 /***************
