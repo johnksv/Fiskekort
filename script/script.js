@@ -55,7 +55,7 @@ function visLang(){
 	var lang = document.getElementById("lang");
 	var background = document.getElementById("langBackground");
 		if(showLang){
-			lang.style.height = "1em";
+			lang.style.height = "2em";
 			background.style.height = "0em";
 			//head.style.height = "4em";			
 			showLang = false;
