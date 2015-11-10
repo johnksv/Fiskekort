@@ -66,7 +66,7 @@ KLASSER OG ID
 
 	line-height:4em;
 	cursor:pointer;
-	z-index:99;
+	z-index:1;
 	transition:all 0.2s;
 }
 
@@ -175,7 +175,7 @@ Language box
 #lang:hover{
 }
 .langBtn{
-	z-index:3;
+	z-index:1;
 	color:white;
 	flex-direction: row;
 	padding: 0.5em;
@@ -216,7 +216,7 @@ Language box
 	
 }
 .flag{
-	z-index:3;
+	z-index:1;
 	width:1.5em;
 	height:0.8em;
 	margin-right: 0.5em;
