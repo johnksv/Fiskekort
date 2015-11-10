@@ -222,7 +222,7 @@ BANNER
 #banner{
 	width:100%;	
 	margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
     color: white;
 }
 
@@ -261,11 +261,13 @@ BANNER
 	background-color: #CFCFCF;
 }
 #downloadBtn{
-
 }
 
-#readBtn{
+.readBtn{
 	margin-left:20%;
+}
+#readBtn2{
+	display:none;
 }
 
 
@@ -366,7 +368,7 @@ Desktop: 769 px
 		justify-content: space-between;
 		padding:0 1em 1em 0;
 		margin-top:0;
-		overflow: 
+		overflow: hidden;
 	}
 	#langBox{
     	justify-content: space-around;
