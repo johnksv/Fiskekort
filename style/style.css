@@ -249,6 +249,10 @@ BANNER
 	line-height:1.5em;
 }
 
+#banner li{
+	margin:1em;
+}
+
 #bannerBtns{
 	/*
 	STYLING AV KNAPPENE
