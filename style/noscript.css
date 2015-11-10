@@ -1,0 +1,16 @@
+
+#lang{
+	height:6em;
+}
+
+#langBackground{
+	height:4em;
+}
+
+#readBtn1{
+	display:none;
+}
+
+#readBtn2{
+	display:inline;
+}

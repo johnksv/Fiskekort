@@ -2,44 +2,50 @@
 	<html lang="no">
 		<head>
 			<title>Fiskekort</title>
+
+			<!-- meta tags -->
 			<meta charset="UTF-8">
 			<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport' />
+			<meta name="author" content="Co-authored by Stian Stensli, Truls Stensrud, Tobias Blegeberg and John Kasper Svergja">
+			<meta name="description" content="DESCRIPTION">
+			<meta name="keywords" content="KEYWORDS">
+
+			<!-- CSS & JS -->
 			<link rel="stylesheet" type="text/css" href="style/style.css">
 			<script src="script/script.js"></script>
+
+			<noscript>
+				<link rel="stylesheet" type="text/css" href="noscript/noscript.css">
+			</noscript>
+
+			<!-- Fonter -->
+			<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Chivo' rel='stylesheet' type='text/css'>
+
+			<!-- Side ikon -->
+<!--			<link rel="icon" href="images/icon.ico"> 
+			Vi må finne en logo for sida!!! -->
+
 		</head>
 
-		<noscript>
-			<style>
-			#lang{
-				height:6em;
-			}
-			#langBackground{
-				height:4em;
-			}
-			#readBtn1{
-				display:none;
-			}
-			#readBtn2{
-				display:inline;
-			}
-			</style>
-		</noscript>
+
 		
 		<body>
 			<header id="header">
 				<div class="wrapper" id="header_wrapper">
 					<div title="Forside" id="logo">Fiskekort</div> <!-- Slutt på #logo -->
 
-					<nav class="">
-							<a id="showHideMenuBtn" class="button" onClick="visMobilMeny()">Vis meny</a>
-							<div id="menuBtns" class="usynlig">
-								<a class="button" href="#">Forside</a>
-								<a class="button" href="grunneiere/">For grunneiere</a>	
-								<a class="button" href="lastNed/">Last ned appen</a>
-							</div>
-
+					<!-- Menybar -->
+					<nav>
+						<a id="showHideMenuBtn" class="button" onClick="visMobilMeny()">Vis meny</a>
+						<div id="menuBtns" class="usynlig">
+							<a class="button" href="#">Forside</a>
+							<a class="button" href="grunneiere/">For grunneiere</a>	
+							<a class="button" href="lastNed/">Last ned appen</a>
+						</div>
 					</nav>
-
+					
+					<!-- Språkvalg -->
 					<div id="lang">
 						<div id="langBox">
 						<a id="nor" class="langBtn" onclick="visLang()" title="Bytt språk til Norsk">
@@ -57,15 +63,21 @@
 					</div> <!-- End of #langBox-->
 					</div> <!-- End of #lang -->
 				</div> <!-- End of .wrapper -->
-			</header>
-			<div id="langBackground">
-			</div>
+			</header>			
+			
+			<!-- Ekstraboks for språkvalg på PC versjon -->
+			<div id="langBackground"></div>
+			
+			
 			<div id="main">
+				<!-- Bildesekjsoner -->
 				<section id="banner">
 					<div class="wrapper">
+						<!-- Mobilboks -->
 						<div class="col-1 hideMobile">
 							<img src="images/iPhoneKart.png" alt="Eksempel av kartfunksjonen.">
 						</div> <!-- End of #col-1 -->
+						<!-- Tekst over bilde -->
 						<div class="col-2">
 							<h1 class="text-shadow">Fiskekort på din mobil</h1>
 							<ul class="text-shadow">
@@ -75,6 +87,7 @@
 								<li>Se kart, som også viser tilrettelagte fiskeplasser.</li>
 								<li>Kjøp fiskekortet direkte på din mobil.</li>
 							</ul>
+							<!-- Knapper over bildet -->
 							<div id="bannerBtns">
 								<a id="downloadBtn" href="#">Last ned</a>
 								<a id="readBtn1" class="readBtn" href="#" onClick="scrollNed()">Les mer</a>
@@ -83,24 +96,30 @@
 						</div> <!-- End of #col-2 -->
 					</div> <!-- End of .wrapper -->
 				</section> <!-- End of #banner -->
+				<!-- Content area -->
 				<section id="content-1">
 					<div class="wrapper">
+						<!-- Venstrestilt kolonne -->
 						<div class="col-1">
 							<h2>Hvorfor fiskekort på mobil</h2>
-<p>Om du har fisket før vet du at det kan være utfordrende å finne ut hvor du kan kjøpe fiskekort for et fiskevann du skal til. Enda vanskeligere kan det være om du skal kjøpe fiskekort i et nytt område som du normalt ikke befinner deg i. Med Fiskekort på mobil kan du nå kjøpe fiskekort til ulike fiskevann på en enkel måte, enten du er en erfaren fisker, nybegynner, eller bare vil ta en fisketur med barn eller venner.</p>
-<h3>Enkel oversikt over fiskevann</h3>
-<p>Fiskekort er kun er gyldig for fiskevann innenfor en sone. Om man går fra et fiskevann til et annet kan det derfor hende at man går inn i en ny sone, som krever et annet fiskekort. Det kan altså fort bli tvil om hvilke fiskevann fiskekortet gjelder for. Fiskekort på mobil har valgt å løse dette problemet ved å enkelt gi deg oversikt over alle fiskevann. Man kan bruke søkefunksjonen eller kartfunksjonen for å finne fiskevann og soner fiskevannene ligger i.</p>
-<h3>Fisking er for alle</h3>
-<p>For at alle skal få oppleve den fantastiske følelsen av å fiske stilles det ulike krav til fiskevannet. Ikke alle er i stand til å gå til et fiskevann langt inne på fjellet.  Fiskekort på mobil lar deg derfor bruke et tilgjengelighetsfilter. Dette er perfekt for alle, spesielt for småbarnsfamilier og personer med funksjonshemninger eller begrensninger. Ved standard er tilrettelagte fiskevann merket med et eget tegn i søk- og kartfunksjonen. Slik kan alle finne et fiskevann som passer dem.</p>
-<h3>Finn fiskevann som oppfyller dine krav</h3>
-<p>Kanskje du vil fiske laks, eller ørret, eller hva det måtte være? Fiskekort på mobil har en lar deg sette kravene for hvilke fiskevann du vil se.  Dermed kan du på en lett måte for eksempel finne ut hvilke fiskevann som tillater fluefiske, otring, eller hvilke fiskevann som inneholder røy, ørret osv.</p>
-<h3>Fiskekort på din smartklokke</h3>
-<p>Med støtte for smartklokke slipper du å finne frem når mobilen når en oppsynsmann vil sjekke fiskekortet ditt. Da slipper du riskoen for å miste telefonen i elven, innsjøen eller annet. </p>
+							<p>Om du har fisket før vet du at det kan være utfordrende å finne ut hvor du kan kjøpe fiskekort for et fiskevann du skal til. Enda vanskeligere kan det være om du skal kjøpe fiskekort i et nytt område som du normalt ikke befinner deg i. Med Fiskekort på mobil kan du nå kjøpe fiskekort til ulike fiskevann på en enkel måte, enten du er en erfaren fisker, nybegynner, eller bare vil ta en fisketur med barn eller venner.</p>
 
+							<h3>Enkel oversikt over fiskevann</h3>
+							<p>Fiskekort er kun er gyldig for fiskevann innenfor en sone. Om man går fra et fiskevann til et annet kan det derfor hende at man går inn i en ny sone, som krever et annet fiskekort. Det kan altså fort bli tvil om hvilke fiskevann fiskekortet gjelder for. Fiskekort på mobil har valgt å løse dette problemet ved å enkelt gi deg oversikt over alle fiskevann. Man kan bruke søkefunksjonen eller kartfunksjonen for å finne fiskevann og soner fiskevannene ligger i.</p>
 
-<h3>Ny til fisking- hvorfor trenger jeg fiskekort/New in Norway – Why do I need a fishing license?</h3>
-<p>Fiskekort er påbudt etter norsk lov. Fiskekort blir solgt av grunneieren.</p>
+							<h3>Fisking er for alle</h3>
+							<p>For at alle skal få oppleve den fantastiske følelsen av å fiske stilles det ulike krav til fiskevannet. Ikke alle er i stand til å gå til et fiskevann langt inne på fjellet.  Fiskekort på mobil lar deg derfor bruke et tilgjengelighetsfilter. Dette er perfekt for alle, spesielt for småbarnsfamilier og personer med funksjonshemninger eller begrensninger. Ved standard er tilrettelagte fiskevann merket med et eget tegn i søk- og kartfunksjonen. Slik kan alle finne et fiskevann som passer dem.</p>
+
+							<h3>Finn fiskevann som oppfyller dine krav</h3>
+							<p>Kanskje du vil fiske laks, eller ørret, eller hva det måtte være? Fiskekort på mobil har en lar deg sette kravene for hvilke fiskevann du vil se.  Dermed kan du på en lett måte for eksempel finne ut hvilke fiskevann som tillater fluefiske, otring, eller hvilke fiskevann som inneholder røy, ørret osv.</p>
+
+							<h3>Fiskekort på din smartklokke</h3>
+							<p>Med støtte for smartklokke slipper du å finne frem når mobilen når en oppsynsmann vil sjekke fiskekortet ditt. Da slipper du riskoen for å miste telefonen i elven, innsjøen eller annet. </p>
+
+							<h3>Ny til fisking- hvorfor trenger jeg fiskekort/New in Norway – Why do I need a fishing license?</h3>
+							<p>Fiskekort er påbudt etter norsk lov. Fiskekort blir solgt av grunneieren.</p>
 						</div> <!-- End of #col-1 -->
+						<!--Høyrestilt kolonne-->
 						<div class="col-2">
 							<img src="images/iPhoneSok.png" alt="Eksempel av søks funksjonen.">
 							<img src="images/iPhoneFiskevann.png" alt="Eksempel av organisajonen av fiskevann.">
