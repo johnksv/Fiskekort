@@ -56,8 +56,11 @@ KLASSER OG ID
 }
 
 .button:hover{
-
 	background-color: rgba(255,255,255,0.2);
+}
+.button:focus{
+	background-color: rgba(255,255,255,0.2);
+	outline:none;
 }
 
 #showHideMenuBtn{
@@ -200,6 +203,10 @@ Language box
 .langBtn:hover{
 	background-color: rgba(256,256,256,0.2);
 }
+.langBtn:focus{
+	background-color: rgba(256,256,256,0.2);
+	outline:none;
+}
 #nor{
 	
 }
@@ -259,6 +266,11 @@ BANNER
 #bannerBtns a:hover{
 	color:black;
 	background-color: #CFCFCF;
+}
+#bannerBtns a:focus{
+	color:black;
+	background-color: #CFCFCF;
+	outline:none;
 }
 #downloadBtn{
 }
