@@ -189,7 +189,7 @@ Language box
 #langBackground{
 	position:absolute;
 	right:0;
-	z-index:0;
+	z-index:-1;
 	width:12em;
 	height:0em;
 	background-color: rgba(0,0,0,0.4);
