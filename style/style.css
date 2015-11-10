@@ -2,8 +2,8 @@
 
 	TABLE OF CONTENT:
 		Universale tags
-		Klasser og ID
-		Kolonner
+		Classes and ID
+		Columns
 		Header
 		Mobile menu
 		Banner
@@ -41,7 +41,7 @@ a{
 
 
 /***************
-KLASSER OG ID
+CLASSES and ID
 ***************/
 .flex{
 	display: -webkit-flex;
@@ -50,7 +50,7 @@ KLASSER OG ID
 }
 
 .text-shadow{
-	/* Skal vi ha text-shadow?*/
+	/* Do we want text-shadow?*/
    text-shadow:
     -1px -1px 3px #000,
     1px -1px 3px #000,
@@ -81,7 +81,7 @@ KLASSER OG ID
 
 
 /***************
-KOLONNER
+COLUMNS
 ***************/
 .wrapper{
 	width:85%;
@@ -149,7 +149,7 @@ nav{
 }
 
 
-/* Class button er definert i "Universale tags" */
+/* Class "button" is defined in "Universale tags" */
 
 
 /**************
@@ -246,7 +246,7 @@ BANNER
 
 #bannerBtns{
 	/*
-	STYLING AV KNAPPENE
+	Button style
 	*/
 	margin-top: 3em;
 	text-shadow: 0;
@@ -268,6 +268,7 @@ BANNER
 	outline:none;
 }
 #downloadBtn{
+	
 }
 
 .readBtn{
@@ -317,6 +318,7 @@ Desktop: 769 px
 	}
 
 		/*Slik at kolonnene i innholdsavdelingen blir brukket opp*/
+		/*So that the columns in the content area is geting used up ????*/
 	[id*="content-"] .wrapper{
 		flex-direction: column;
 	}
@@ -331,7 +333,7 @@ Desktop: 769 px
 		order:3;
 	}
 	#menuBtns{
-	justify-content: space-around;
+		justify-content: space-around;
 	}
 
 	.button{ 
@@ -407,6 +409,8 @@ Desktop: 769 px
 	  	-o-transition: max-height 0.5s ease; /* Opera */
 	  	transition: max-height 0.5s ease; /* Standard */
 	}
+	
+	/*Delete?*/
 	.synlig{
 		overflow:hidden;
 		max-height:400px !important;

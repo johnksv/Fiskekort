@@ -48,8 +48,12 @@ function smoothScroll(){
 }
 
 /*******************************
-	SCRIPT FOR MOBILEMENY
+	SCRIPT FOR MOBILE MENU
 ********************************/
+
+/*
+Work work..
+*/
 function visMobilMeny(){
 	
 	var meny = document.getElementById("menuBtns");
@@ -66,6 +70,12 @@ function visMobilMeny(){
 	
 }
 
+/*
+Too scared to start changing this whene one is a 
+var name in english and another is a function in norwegian
+See: visLang and showLang...
+*/		
+
 function visLang(){
 	var lang = document.getElementById("lang");
 	var background = document.getElementById("langBackground");
@@ -80,7 +90,7 @@ function visLang(){
 			lang.style.height = "6em";
 			background.style.height = "4em";
 		//	head.style.height = "8em";
-
-			showLang = true;
+		
+				showLang = true;
 		}
 }
