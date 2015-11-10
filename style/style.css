@@ -43,6 +43,21 @@ a{
 /***************
 KLASSER OG ID
 ***************/
+.flex{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.text-shadow{
+	/* Skal vi ha text-shadow?*/
+   text-shadow:
+    -1px -1px 3px #000,
+    1px -1px 3px #000,
+    -1px 1px 3px #000,
+    1px 1px 3px #000; 
+	
+}
 .button{
 	text-align:center;
 	width:25%;
@@ -63,22 +78,13 @@ KLASSER OG ID
 	outline:none;
 }
 
-#showHideMenuBtn{
-	display: none;
-}
-#header_wrapper{
-	width:100%;
-	justify-content: space-around; 
-}
+
 
 /***************
 KOLONNER
 ***************/
 .wrapper{
 	width:85%;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex; 
 	justify-content: center; 
 	margin: 0 auto;
 }
@@ -112,9 +118,6 @@ header{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex; 
-		
-
-
 }
 
 #logo{
@@ -127,14 +130,7 @@ header{
 
 
 nav{
-/*	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	justify-content: center;*/
 	width:60%;
-	/*height: 3.25em;*/
-	
-
 }
 #menuBtns{
 	width: 100%;
@@ -142,6 +138,14 @@ nav{
 	display: -ms-flexbox;
 	display: flex; 
 	justify-content: center;
+}
+
+#showHideMenuBtn{
+	display: none;
+}
+#header_wrapper{
+	width:100%;
+	justify-content: space-around; 
 }
 
 
@@ -164,9 +168,6 @@ Language box
 	  	transition: height 0.5s ease; /* Standard */
 }
 #langBox{
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
 	flex-direction:column;
 	justify-content:space-between;
 	height:6em;
@@ -176,9 +177,6 @@ Language box
 .langBtn{
 	z-index:3;
 	color:white;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
 	flex-direction: row;
 	padding: 0.5em;
 	cursor:pointer;
@@ -235,16 +233,8 @@ BANNER
     color: white;
 }
 
-.text-shadow{
-	
-
-	/* Skal vi ha text-shadow?*/
-   text-shadow:
-    -1px -1px 3px #000,
-    1px -1px 3px #000,
-    -1px 1px 3px #000,
-    1px 1px 3px #000; 
-	
+#banner h1{
+	font-size: 2.5em;
 }
 #banner ul{
 	font-size:1.2em;
