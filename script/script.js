@@ -1,17 +1,23 @@
 /*******************************
 	VARIABLES FOR FUNCTIONS
 *******************************/
-var x = 0;
-var intervalId;
-var text;
-var showLang = false;
+//Smooth Scroll
+	var x = 0;
+	var intervalId;
+	var text;
+
+//Mobile Menu:
+	var menyVisible = true;
+
+//LanguageBox
+	var showLang = false;
 
 
 /*******************************
 EVENT LISTNERS
 *******************************/
 
-//STOPS THE SCROLLING:
+//Stops the scroling when you click the link:
 document.getElementById("readBtn").addEventListener("click",function(event){
    	event.preventDefault()
 });
@@ -24,22 +30,17 @@ document.getElementById("readBtn").addEventListener("click", scrollNed);
 ********************************/
 
 function scrollNed(){
-	console.log(event);
+
 	event.preventDefault();
 	x=pageYOffset;
-	console.log(text);
 	text = document.getElementById("content-1");
-	console.log(text);
 	intervalId = setInterval(smoothScroll,15);
 }
 
 
 function smoothScroll(){
 	x +=20;
-	scrollTo(0,x);
-	console.log(pageYOffset +" x:" + x);
-	console.log("BoundingClient:" + text.getBoundingClientRect().top);
-	
+	scrollTo(0,x);	
 	if(pageYOffset<x||text.getBoundingClientRect().top<0){
 	clearInterval(intervalId);
 	}
@@ -47,24 +48,22 @@ function smoothScroll(){
 }
 
 /*******************************
-	SCRIPT FOR MENY
+	SCRIPT FOR MOBILEMENY
 ********************************/
-
 function visMobilMeny(){
 	
 	var meny = document.getElementById("menuBtns");
- 
-	if(meny.className == "synlig"){ 
-	//Menyen er synlig, do this
-		meny.className = "usynlig";
+	meny.classList.toggle("synlig");
+
+	if(menyVisible){ 
 		document.getElementById("showHideMenuBtn").innerHTML="Vis meny";
-		document.getElementById("menuBtns").offsetHeight
+		menyVisible = false;
 	}
 	else{ 
-	//Menyen er ikke synlig, do this
-		meny.className = "synlig";
 		document.getElementById("showHideMenuBtn").innerHTML="Skjul meny";
+		menyVisible = true;
 	}
+	
 }
 
 function visLang(){
@@ -84,5 +83,4 @@ function visLang(){
 
 			showLang = true;
 		}
-
 }
