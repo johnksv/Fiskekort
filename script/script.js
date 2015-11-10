@@ -1,26 +1,44 @@
 /*******************************
-	SCRIPT FOR SCROLLING
-********************************/
+	VARIABLES FOR FUNCTIONS
+*******************************/
 var x = 0;
 var intervalId;
 var text;
-var textPos;
 var showLang = false;
 
 
+/*******************************
+EVENT LISTNERS
+*******************************/
+
+//STOPS THE SCROLLING:
+document.getElementById("readBtn").addEventListener("click",function(event){
+   	event.preventDefault()
+});
+//SmoothScroll
+document.getElementById("readBtn").addEventListener("click", scrollNed);
+
+
+/*******************************
+	SCRIPT FOR SCROLLING
+********************************/
 
 function scrollNed(){
+	console.log(event);
+	event.preventDefault();
 	x=pageYOffset;
-	
+	console.log(text);
 	text = document.getElementById("content-1");
-	textPos = text.getBoundingClientRect();
+	console.log(text);
 	intervalId = setInterval(smoothScroll,15);
 }
 
 
 function smoothScroll(){
-	x+=20;
+	x +=20;
 	scrollTo(0,x);
+	console.log(pageYOffset +" x:" + x);
+	console.log("BoundingClient:" + text.getBoundingClientRect().top);
 	
 	if(pageYOffset<x||text.getBoundingClientRect().top<0){
 	clearInterval(intervalId);
@@ -36,20 +54,18 @@ function visMobilMeny(){
 	
 	var meny = document.getElementById("menuBtns");
  
-	if(meny.className == "synlig"){ //Menyen er synlig, do this
+	if(meny.className == "synlig"){ 
+	//Menyen er synlig, do this
 		meny.className = "usynlig";
 		document.getElementById("showHideMenuBtn").innerHTML="Vis meny";
 		document.getElementById("menuBtns").offsetHeight
 	}
-	else{ //Menyen er ikke synlig, do this
+	else{ 
+	//Menyen er ikke synlig, do this
 		meny.className = "synlig";
 		document.getElementById("showHideMenuBtn").innerHTML="Skjul meny";
 	}
-
 }
-/*var meny = document.getElementById("menuBtns");
-  (meny.className === "synlig") ? meny.className = "usynlig" : meny.className = "";
-*/
 
 function visLang(){
 	var lang = document.getElementById("lang");
