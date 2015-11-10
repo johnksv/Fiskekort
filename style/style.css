@@ -259,7 +259,7 @@ BANNER
 
 #bannerBtns a{
 	color: white;
-    padding: 1em;
+    padding: 1em 5%;
     background-color: saddlebrown;
     border: 1px solid black;
 }
@@ -276,7 +276,7 @@ BANNER
 }
 
 .readBtn{
-	margin-left:20%;
+	margin-left:17%;
 }
 #readBtn2{
 	display:none;
@@ -418,6 +418,10 @@ Desktop: 769 px
 		border-top:1px solid white;
 		text-align:center;
 	}
+
+	.readBtn{
+	margin-left:15%;
+}
 
 	.synlig{
 		overflow:hidden;
