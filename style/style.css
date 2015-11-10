@@ -56,8 +56,11 @@ KLASSER OG ID
 }
 
 .button:hover{
-
 	background-color: rgba(255,255,255,0.2);
+}
+.button:focus{
+	background-color: rgba(255,255,255,0.2);
+	outline:none;
 }
 
 #showHideMenuBtn{
@@ -86,7 +89,7 @@ KOLONNER
 	width:40%;	
 }
 .col-1 img{
-	width:50%;
+	width:60%;
 	margin:1em;
 }
 .col-2{
@@ -171,6 +174,7 @@ Language box
 #lang:hover{
 }
 .langBtn{
+	z-index:3;
 	color:white;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -187,7 +191,7 @@ Language box
 #langBackground{
 	position:absolute;
 	right:0;
-	z-index:-1;
+	z-index:0;
 	width:12em;
 	height:0em;
 	background-color: rgba(0,0,0,0.4);
@@ -200,6 +204,10 @@ Language box
 .langBtn:hover{
 	background-color: rgba(256,256,256,0.2);
 }
+.langBtn:focus{
+	background-color: rgba(256,256,256,0.2);
+	outline:none;
+}
 #nor{
 	
 }
@@ -210,6 +218,7 @@ Language box
 	
 }
 .flag{
+	z-index:3;
 	width:1.5em;
 	height:0.8em;
 	margin-right: 0.5em;
@@ -242,6 +251,10 @@ BANNER
 	line-height:1.5em;
 }
 
+#banner li{
+	margin:1em;
+}
+
 #bannerBtns{
 	/*
 	STYLING AV KNAPPENE
@@ -252,7 +265,7 @@ BANNER
 
 #bannerBtns a{
 	color: white;
-    padding: 1em;
+    padding: 1em 5%;
     background-color: saddlebrown;
     border: 1px solid black;
 }
@@ -260,11 +273,16 @@ BANNER
 	color:black;
 	background-color: #CFCFCF;
 }
+#bannerBtns a:focus{
+	color:black;
+	background-color: #CFCFCF;
+	outline:none;
+}
 #downloadBtn{
 }
 
 .readBtn{
-	margin-left:20%;
+	margin-left:17%;
 }
 #readBtn2{
 	display:none;
@@ -333,6 +351,7 @@ Desktop: 769 px
 	#langBackground{
 		display:none;
 	}
+
 	#langBox{
 		flex-direction: row;
     	
@@ -366,7 +385,7 @@ Desktop: 769 px
 		width:100%;
 		flex-direction: row;
 		justify-content: space-between;
-		padding:0 1em 1em 0;
+		margin:0 1em 1em 0;
 		margin-top:0;
 		overflow: hidden;
 	}
@@ -406,6 +425,10 @@ Desktop: 769 px
 		border-top:1px solid white;
 		text-align:center;
 	}
+
+	.readBtn{
+	margin-left:15%;
+}
 
 	.synlig{
 		overflow:hidden;
