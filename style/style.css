@@ -160,8 +160,7 @@ Language box
 	
 	margin-top:1em;
 	height:2em;
-	overflow:hidden;
-	z-index:1;
+	overflow:hidden; 
 	-webkit-transition: height 0.5s ease; /* Firefox */
 	  	-moz-transition: height 0.5s ease; /* WebKit */
 	  	-o-transition: height 0.5s ease; /* Opera */
@@ -175,12 +174,13 @@ Language box
 #lang:hover{
 }
 .langBtn{
-	z-index:1;
+
 	color:white;
 	flex-direction: row;
 	padding: 0.5em;
 	cursor:pointer;
 
+	z-index:1;
 	-webkit-transition: all 0.5s ease; /* Firefox */
 	  	-moz-transition: all 0.5s ease; /* WebKit */
 	  	-o-transition: all 0.5s ease; /* Opera */
@@ -189,7 +189,7 @@ Language box
 #langBackground{
 	position:absolute;
 	right:0;
-	z-index:-1;
+	z-index:0;
 	width:12em;
 	height:0em;
 	background-color: rgba(0,0,0,0.4);
@@ -216,7 +216,6 @@ Language box
 	
 }
 .flag{
-	z-index:1;
 	width:1.5em;
 	height:0.8em;
 	margin-right: 0.5em;
