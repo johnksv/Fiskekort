@@ -27,6 +27,7 @@ body{
 	font-family: arial;
 	margin:auto;
 	max-width:2000px;
+	min-width:250px;
 	width:100%;
 	position:relative;
 
@@ -68,6 +69,7 @@ CLASSES and ID
 	cursor:pointer;
 	z-index:1;
 	transition:all 0.2s;
+
 }
 
 .button:hover{
@@ -137,6 +139,7 @@ nav{
 	width:60%;
 	height: inherit;
 	font-size: 1.25em;
+	overflow:hidden;
 }
 #menuBtns{
 	justify-content: center;
@@ -271,15 +274,9 @@ BANNER
 	
 }
 
-.readBtn{
+#readBtn{
 	margin-left:17%;
 }
-#readBtn2{
-	display:none;
-}
-
-
-
 /***************
 CONTENT
 ***************/
@@ -328,7 +325,7 @@ Desktop: 769 px
 
 
 	nav{
-		width:95%;
+		width:100%;
 		margin:0;
 		order:3;
 	}
@@ -420,7 +417,8 @@ Desktop: 769 px
 	Content
 	*******/
 	.button{
-		width:100%;
+		width:80%;
+		margin:auto;
 		border-top:1px solid white;
 		text-align:center;
 	}
