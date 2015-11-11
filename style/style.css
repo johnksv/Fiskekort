@@ -77,7 +77,7 @@ CLASSES and ID
 	width:25%;
 	/*background-color:gray;*/
 	color:white;
-	background-color: #861B23;
+	
 	padding:1em;
 	cursor:pointer;
 	z-index:1;
@@ -272,7 +272,7 @@ BANNER
 #bannerBtns a{
 	color: white;
     padding: 1em 5%;
-    background-color: saddlebrown;
+    background-color: #861B23;
     border: 1px solid black;
 }
 #bannerBtns a:hover{
