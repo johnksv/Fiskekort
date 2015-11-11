@@ -21,9 +21,10 @@ Universale Tags
 body{
 	background-image:url("../images/lake.jpg");
 	background-repeat:no-repeat;
-	background-position: center top;
+	background-attachment:fixed;
 	background-color:#23476b; /* OLD COLOR: 112445*/
-	background-size: 100%;
+	background-position:center;
+	background-size:cover;
 	font-family: arial;
 	margin:auto;
 	max-width:2000px;
@@ -319,9 +320,7 @@ Nettbrett: 481 px - 768 px
 Desktop: 769 px 
 ***************/
 @media screen and (max-width:769px){
-	body{
-		background-size:200%;
-	}
+	
 	header div.wrapper{
 		justify-content: space-between;
 		flex-wrap: wrap;
@@ -371,10 +370,7 @@ Desktop: 769 px
 	.hideMobile{
 		display: none !important;
 	}
-	body{
-		margin:auto;
-		background-size:250%;
-	}
+	
 	header{
 		padding-bottom: 1em;
 	}
