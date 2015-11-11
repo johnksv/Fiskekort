@@ -44,6 +44,18 @@ a{
 /***************
 CLASSES and ID
 ***************/
+#shortcutContent{
+	position: absolute;
+	top: -2000px;
+	padding: 1em;
+	background-color: white;
+}
+#shortcutContent:focus{
+	top: 4em;
+	left:1em;
+}
+
+
 .flex{
 	display: -webkit-flex;
 	display: -ms-flexbox;
