@@ -19,12 +19,12 @@
 Universale Tags
 ***************/
 body{
-	background-image:url("../images/lake.jpg");
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-	background-color:#23476b; /* OLD COLOR: 112445*/
-	background-position:center top;
-	background-size:cover;
+	background-image: url("../images/lake.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #23476b; /* OLD COLOR: 112445*/
+	background-position: center top;
+	background-size: cover;
 	font-family: arial;
 	margin:auto;
 	max-width:2000px;
@@ -33,6 +33,15 @@ body{
 	position:relative;
 
 }
+
+h2,h3{
+	font-family: 'Noto Sans', sans-serif;
+}
+
+p, span, #main a {
+	font-family: 'Open Sans', sans-serif;
+}
+
 p{
 	line-height: 1.8em;
 }
@@ -77,7 +86,7 @@ CLASSES and ID
 	width:25%;
 	/*background-color:gray;*/
 	color:white;
-	
+
 	padding:1em;
 	cursor:pointer;
 	z-index:1;
@@ -262,9 +271,6 @@ BANNER
 }
 
 #bannerBtns{
-	/*
-	Button style
-	*/
 	margin-top: 3em;
 	text-shadow: 0;
 }
@@ -275,15 +281,12 @@ BANNER
     background-color: #861B23;
     border: 1px solid black;
 }
-#bannerBtns a:hover{
-	color:black;
+#bannerBtns a:hover, #bannerBtns a:focus{
+	color: black;
 	background-color: #CFCFCF;
+	outline: none;
 }
-#bannerBtns a:focus{
-	color:black;
-	background-color: #CFCFCF;
-	outline:none;
-}
+
 #downloadBtn{
 	
 }
