@@ -23,7 +23,7 @@ body{
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-color:#23476b; /* OLD COLOR: 112445*/
-	background-position:center;
+	background-position:center top;
 	background-size:cover;
 	font-family: arial;
 	margin:auto;
