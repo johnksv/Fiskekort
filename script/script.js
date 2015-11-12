@@ -15,6 +15,7 @@
 
 /*******************************
 EVENT LISTNERS
+Only for front page. Will cast error on other pages...
 *******************************/
 
 //Stops the scroling when you click the link:
@@ -26,7 +27,7 @@ document.getElementById("readBtn").addEventListener("click", scrollDown);
 
 
 
-document.getElementById("imgMobil").innerHTML = '<img id="background" src="images/lake.jpg" alt="Bilde av Norsk gutt som fisker i hafjell">';
+document.getElementById("imgMobil").innerHTML = '<img id="background" src="images/lake.jpg" alt="">';
 
 /*******************************
 	SCRIPT FOR SCROLLING

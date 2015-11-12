@@ -97,15 +97,9 @@ CLASSES and ID
 }
 
 
-.button:hover{
+.button:hover, .button:focus, .active{
 	background-color: rgba(255,255,255,0.2);
 }
-.button:focus{
-	background-color: rgba(255,255,255,0.2);
-	outline:none;
-}
-
-
 
 /***************
 COLUMNS

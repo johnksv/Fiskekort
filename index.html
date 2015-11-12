@@ -13,16 +13,14 @@
 			<!-- CSS & JS -->
 			<link rel="stylesheet" type="text/css" href="style/style.css">
 
+			<!-- IF IE, only for IE 9 and down. -->
+			<!--[if IE]>
+				<link rel="stylesheet" type="text/css" href="style/IEstyle.css" />
+			<![endif]-->
+
 			<noscript>
 				<link rel="stylesheet" type="text/css" href="style/noscript.css">
 			</noscript>
-
-			
-			<!-- IF IE, only for IE 9 and down. -->
-			<!--[if IE]>
-
-				<link rel="stylesheet" type="text/css" href="style/IEstyle.css" />
-			<![endif]-->
 
 			<!-- Fonts -->
 			<link href='https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans' rel='stylesheet' type='text/css'>
@@ -31,7 +29,6 @@
 			<link rel="icon" href="images/icon.ico"> 
 			
 		</head>
-
 		
 		<body>
 			<a href="#content-1" id="shortcutContent">Gå til hovedinnhold</a>
@@ -43,7 +40,7 @@
 					<nav>
 						<a id="showHideMenuBtn" class="button" onClick="showMobileMenu()">Vis meny</a>
 						<div id="menuBtns" class="flex">
-							<a class="button" href="#">Forside</a>
+							<a class="button active" href="#">Forside</a>
 							<a class="button" href="grunneiere/">For grunneiere</a>	
 							<a class="button" href="faq/">Ofte stilte spørsmål</a>
 						</div>
@@ -52,19 +49,15 @@
 					<!-- Language chooser -->
 					<div id="lang">
 						<div id="langBox" class="flex">
-						<a id="nor" class="langBtn flex" onclick="showLang()" title="Bytt språk til Norsk">
-							<img class="flag" src="images/norwegian.png" alt="Bilde av norsk flagg">
-							Norsk
-						</a>
-						<a id="eng" class="langBtn flex" onfocus="showLang()"  href="./index-en.html" title="Change language to English">
-							<img class="flag" src="images/usa.png" alt="Bilde av engelsk flagg">
-							English
-						</a>
-					<!--	<a id="ger" class="langBtn flex" href="./index-de.html" title="Siehe Seite auf Deutsch">
-							<img class="flag" src="images/german.png" alt="Bilde av tysk flagg">
-							Deutsch
-						</a>-->
-					</div> <!-- End of #langBox-->
+							<a id="nor" class="langBtn flex" onclick="showLang()" title="Bytt språk til Norsk">
+								<img class="flag" src="images/norwegian.png" alt="">
+								Norsk
+							</a>
+							<a id="eng" class="langBtn flex" onfocus="showLang()"  href="./index-en.html" title="Change language to English">
+								<img class="flag" src="images/usa.png" alt="">
+								English
+							</a>
+						</div> <!-- End of #langBox-->
 					</div> <!-- End of #lang -->
 				</div> <!-- End of .wrapper -->
 			</header>
@@ -90,35 +83,15 @@
 					<div class="wrapper flex">
 						<!-- Left column -->
 						<div class="col-1">
-							<ul>
-							<!-- Finale? -->
-								<li>Finn hvilket fiskekort som gjelder for hvilket vann</li>
-								<li>Få oversikt over hvilken fisketyper som finnes i vannet</li>
-								<li>Se kart, som også viser tilrettelagte fiskeplasser.</li>
-								<li>Kjøp fiskekortet direkte på din mobil.</li>
-							</ul>
+
+
 							<img class="showMobile" src="imagesApp/iPhoneKart.png" alt="Eksempel av kartfunksjonen.">
-							<h2>Hvorfor fiskekort på mobil</h2>
-							<p>Om du har fisket før vet du at det kan være utfordrende å finne ut hvor du kan kjøpe fiskekort for et fiskevann du skal til. Enda vanskeligere kan det være om du skal kjøpe fiskekort i et nytt område som du normalt ikke befinner deg i. Med Fiskekort på mobil kan du nå kjøpe fiskekort til ulike fiskevann på en enkel måte, enten du er en erfaren fisker, nybegynner, eller bare vil ta en fisketur med barn eller venner.</p>
+							
 
-							<h3>Enkel oversikt over fiskevann</h3>
-							<p>Fiskekort er kun er gyldig for fiskevann innenfor en sone. Om man går fra et fiskevann til et annet kan det derfor hende at man går inn i en ny sone, som krever et annet fiskekort. Det kan altså fort bli tvil om hvilke fiskevann fiskekortet gjelder for. Fiskekort på mobil har valgt å løse dette problemet ved å enkelt gi deg oversikt over alle fiskevann. Man kan bruke søkefunksjonen eller kartfunksjonen for å finne fiskevann og soner fiskevannene ligger i.</p>
-
-							<h3>Fisking er for alle</h3>
-							<p>For at alle skal få oppleve den fantastiske følelsen av å fiske stilles det ulike krav til fiskevannet. Ikke alle er i stand til å gå til et fiskevann langt inne på fjellet.  Fiskekort på mobil lar deg derfor bruke et tilgjengelighetsfilter. Dette er perfekt for alle, spesielt for småbarnsfamilier og personer med funksjonshemninger eller begrensninger. Ved standard er tilrettelagte fiskevann merket med et eget tegn i søk- og kartfunksjonen. Slik kan alle finne et fiskevann som passer dem.</p>
-
-							<h3>Finn fiskevann som oppfyller dine krav</h3>
-							<p>Kanskje du vil fiske laks, eller ørret, eller hva det måtte være? Fiskekort på mobil har en lar deg sette kravene for hvilke fiskevann du vil se.  Dermed kan du på en lett måte for eksempel finne ut hvilke fiskevann som tillater fluefiske, otring, eller hvilke fiskevann som inneholder røy, ørret osv.</p>
-
-							<h3>Fiskekort på din smartklokke</h3>
-							<p>Med støtte for smartklokke slipper du å finne frem når mobilen når en oppsynsmann vil sjekke fiskekortet ditt. Da slipper du riskoen for å miste telefonen i elven, innsjøen eller annet. </p>
-
-							<h3>Ny til fisking- hvorfor trenger jeg fiskekort/New in Norway – Why do I need a fishing license?</h3>
-							<p>Fiskekort er påbudt etter norsk lov. Fiskekort blir solgt av grunneieren.</p>
 						</div> <!-- End of #col-1 -->
 						<!-- Rigth column -->
 						<div class="col-2">
-							<img src="imagesApp/iPhonesok.png" alt="Eksempel av søks funksjonen.">
+							<img src="imagesApp/iPhonesok.png" alt="Eksempel av søkfunksjonen.">
 							<img src="imagesApp/iPhoneFiskevann.png" alt="Eksempel av organisajonen av fiskevann.">
 						</div> <!-- End of #col-2 -->
 					</div> <!-- End of .wrapper -->
@@ -135,7 +108,17 @@
 					</div> <!-- End of #col-1 -->
 					<div class="col-2">
 						<h3>Andre lenker</h3>
-						<p></p>
+							<ul>
+								<li>
+									<a href="annet/#tilgjenglighet">Tilgjengelighet</a>
+								</li>
+								<li>
+									<a href="annet/#personvern">Personvern</a>
+								</li>
+								<li>
+									<a href="kart/">Nettsidekart</a>
+								</li>
+							</ul>
 					</div> <!-- End of #col-2 -->
 				</div> <!-- End of .wrapper -->
 			</footer>
