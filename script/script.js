@@ -80,12 +80,13 @@ function showLang(){
 	var lang = document.getElementById("lang");
 		if(langVisible){
 			lang.style.height = "2em";		
+			lang.style.marginTop = "1em";
 			langVisible = false;
 		
 		}
 		else{
-			lang.style.height = "6em";
-		
+			lang.style.height = "4em";
+			lang.style.marginTop = "0em";
 				langVisible = true;
 		}
 }

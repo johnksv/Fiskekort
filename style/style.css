@@ -91,8 +91,8 @@ CLASSES and ID
 	cursor:pointer;
 	z-index:1;
 	transition:all 0.2s;
-
 }
+
 
 .button:hover{
 	background-color: rgba(255,255,255,0.2);
@@ -188,15 +188,15 @@ Language box
 	height:2em;
 	overflow:hidden; 
 	background-color: #23476b;
-	-webkit-transition: height 0.5s ease; /* Firefox */
-	  	-moz-transition: height 0.5s ease; /* WebKit */
-	  	-o-transition: height 0.5s ease; /* Opera */
-	  	transition: height 0.5s ease; /* Standard */
+	-webkit-transition: all 0.5s ease; /* Firefox */
+	  	-moz-transition: all 0.5s ease; /* WebKit */
+	  	-o-transition: all 0.5s ease; /* Opera */
+	  	transition: all 0.5s ease; /* Standard */
 }
 #langBox{
 	flex-direction:column;
 	justify-content:space-between;
-	height:6em;
+	height:4em;
 }
 #lang:hover{
 }
