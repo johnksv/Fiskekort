@@ -447,6 +447,10 @@ Desktop: 769 px
 		margin:0 auto 0 auto;
 		border-radius:0;
 	}
+	footer [class*="col"]{
+		width: 100%;
+		margin: 0;
+	}
 
 	#background{
 		min-width:0;
