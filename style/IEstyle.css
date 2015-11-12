@@ -3,11 +3,45 @@
 FOR INTERNET EXPLODER
 
 ***************************************/
-body{
-	background-color: white;
+body, #content-1, footer{
+	background-image: url();
+	background-color: #23476b;
+	color: white;
+}
+
+header:after {
+	padding: 1em;
+	content: "Please update your browser to properly view this page.";
+	font-size: 3em;
 }
 
 
-.flex{
+.flex, #logo, #lang, nav{
 	display: inline-block;
+}
+
+
+.flag, #readBtn {
+    display: none;
+}
+
+
+/* style.css (280, 13) */
+header{
+	height: auto;
+	margin: 1em;
+}
+#lang{
+	height: auto;
+	overflow: visible;
+
+}
+#bannerBtns {
+    margin-bottom: 3em;
+}
+#banner .col-1 {
+    margin: 1em;
+}
+.col-2{
+	margin: 0;
 }
