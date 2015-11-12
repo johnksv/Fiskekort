@@ -45,11 +45,11 @@
 					<!-- Language chooser -->
 					<div id="lang">
 						<div id="langBox" class="flex">
-						<a id="nor" class="langBtn flex" onclick="visLang()" title="Bytt språk til Norsk">
+						<a id="nor" class="langBtn flex" onclick="showLang()" title="Bytt språk til Norsk">
 							<img class="flag" src="images/norwegian.png" alt="Bilde av norsk flagg">
 							Norsk
 						</a>
-						<a id="eng" class="langBtn flex" onfocus="visLang()"  href="./index-en.html" title="Change language to English">
+						<a id="eng" class="langBtn flex" onfocus="showLang()"  href="./index-en.html" title="Change language to English">
 							<img class="flag" src="images/usa.png" alt="Bilde av engelsk flagg">
 							English
 						</a>
@@ -60,12 +60,7 @@
 					</div> <!-- End of #langBox-->
 					</div> <!-- End of #lang -->
 				</div> <!-- End of .wrapper -->
-			</header>			
-			
-			<!-- Extra box for the pc language chooser -->
-			<div id="langBackground"></div>
-			
-			
+			</header>				
 			<div id="main">
 				<!-- Image section -->
 				<section id="banner">
@@ -79,7 +74,7 @@
 							<h1 class="text-shadow">Fiskekort på din mobil</h1>
 							<!-- Buttons at image -->
 							<div id="bannerBtns">
-								<a id="downloadBtn" href="#" onfocus="visLang()">Last ned</a>
+								<a id="downloadBtn" href="#" onfocus="showLang()">Last ned</a>
 								<a id="readBtn" href="#content-1">Les mer</a>
 							</div> <!-- End of #bannerbtns -->
 						</div> <!-- End of #col-2 -->

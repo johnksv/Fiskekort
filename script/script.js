@@ -10,7 +10,7 @@
 	var menyVisible = true;
 
 //LanguageBox
-	var showLang = false;
+	var langVisible = false;
 
 
 /*******************************
@@ -76,21 +76,16 @@ var name in english and another is a function in norwegian
 See: visLang and showLang...
 */		
 
-function visLang(){
+function showLang(){
 	var lang = document.getElementById("lang");
-	var background = document.getElementById("langBackground");
-		if(showLang){
-			lang.style.height = "2em";
-			background.style.height = "0em";
-			//head.style.height = "4em";			
-			showLang = false;
+		if(langVisible){
+			lang.style.height = "2em";		
+			langVisible = false;
 		
 		}
 		else{
 			lang.style.height = "6em";
-			background.style.height = "4em";
-		//	head.style.height = "8em";
 		
-				showLang = true;
+				langVisible = true;
 		}
 }

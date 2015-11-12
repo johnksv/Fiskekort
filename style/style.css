@@ -23,7 +23,7 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-color: #23476b; /* OLD COLOR: 112445*/
-	background-position: center top;
+	background-position: center top;	
 	background-size: cover;
 	font-family: arial;
 	margin:auto;
@@ -187,6 +187,7 @@ Language box
 	margin-top:1em;
 	height:2em;
 	overflow:hidden; 
+	background-color: #23476b;
 	-webkit-transition: height 0.5s ease; /* Firefox */
 	  	-moz-transition: height 0.5s ease; /* WebKit */
 	  	-o-transition: height 0.5s ease; /* Opera */
