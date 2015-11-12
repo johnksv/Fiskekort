@@ -77,6 +77,8 @@ See: visLang and showLang...
 */		
 
 function showLang(){
+	if(window.innerWidth>1024)
+	{
 	var lang = document.getElementById("lang");
 		if(langVisible){
 			lang.style.height = "2em";		
@@ -89,4 +91,5 @@ function showLang(){
 			lang.style.marginTop = "0em";
 				langVisible = true;
 		}
+	}
 }

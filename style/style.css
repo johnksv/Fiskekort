@@ -326,7 +326,7 @@ Smarttelefon: 0 px - 480 px
 Nettbrett: 481 px - 768 px
 Desktop: 769 px 
 ***************/
-@media screen and (max-width:769px){
+@media screen and (max-width:1024px){
 	
 	header div.wrapper{
 		justify-content: space-between;
@@ -347,6 +347,7 @@ Desktop: 769 px
 		width:100%;
 		margin:0;
 		order:3;
+		border-top:1px solid white;
 	}
 	#menuBtns{
 		justify-content: space-around;
@@ -361,7 +362,11 @@ Desktop: 769 px
 
 	#langBox{
 		flex-direction: row;
-    	
+    	height:2em;
+		font-size:1.25em;
+	}
+	#lang{
+		height:2.5em;
 	}
 
 	.col-2 img{
@@ -374,7 +379,7 @@ Desktop: 769 px
 	}
 }
 
-@media screen and (max-width:481px){
+@media screen and (max-width:550px){
 	.hideMobile{
 		display: none !important;
 	}
@@ -386,13 +391,15 @@ Desktop: 769 px
 	header{
 		padding-bottom: 1em;
 	}
+	nav{
+		border:none;
+	}
 	#logo{
 		width:100%;
 	}
 
 	#lang{
 		width:100%;
-		font-size:1.25em;
 		flex-direction: row;
 		justify-content: space-between;
 		margin:0 1em 1em 0;
