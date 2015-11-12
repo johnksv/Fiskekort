@@ -57,7 +57,7 @@ Work work..
 function showMobileMenu(){
 	
 	var meny = document.getElementById("menuBtns");
-	meny.classList.toggle("synlig");
+	meny.classList.toggle("visible");
 
 	if(menyVisible){ 
 		document.getElementById("showHideMenuBtn").innerHTML="Skjul meny";
@@ -83,6 +83,7 @@ function showLang(){
 		if(langVisible){
 			lang.style.height = "2em";		
 			lang.style.marginTop = "1em";
+			lang.scrollTop-=50;
 			langVisible = false;
 		
 		}

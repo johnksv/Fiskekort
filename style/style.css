@@ -382,6 +382,10 @@ Desktop: 769 px
 		width: 100%;
 		margin: 0;
 	}
+	footer [class*="col"]{
+		width: 50%;
+		margin: 0;
+	}
 }
 
 @media screen and (max-width:550px){
@@ -390,7 +394,7 @@ Desktop: 769 px
 	}
 
 	body{
-		background-position:70%;
+		background-position:70% 0;
 	}
 	
 	header{
@@ -449,8 +453,8 @@ Desktop: 769 px
 
 	}
 	
-	/*Delete?*/
-	.synlig{
+	
+	.visible{
 		max-height:200px !important;
 	}
 
