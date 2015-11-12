@@ -25,6 +25,9 @@ document.getElementById("readBtn").addEventListener("click",function(event){
 document.getElementById("readBtn").addEventListener("click", scrollDown);
 
 
+
+document.getElementById("imgMobil").innerHTML = '<img id="background" src="images/lake.jpg" alt="Bilde av Norsk gutt som fisker i hafjell">';
+
 /*******************************
 	SCRIPT FOR SCROLLING
 ********************************/
