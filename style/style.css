@@ -328,6 +328,10 @@ footer .flex{
 	flex-wrap: wrap;
 }
 
+#background{
+	display:none;
+}
+
 /***************
 MEDIA QUERIES
 Smarttelefon: 0 px - 480 px
@@ -389,6 +393,15 @@ Desktop: 769 px
 		width: 50%;
 		margin: 0;
 	}
+	#background{
+		display:block;
+		position:fixed;
+		top:0;
+		right:-30%;
+		width:150%;
+		min-width:180vh;
+		z-index:-1;
+	}
 }
 
 @media screen and (max-width:550px){
@@ -433,6 +446,12 @@ Desktop: 769 px
 		width:100%;
 		margin:0 auto 0 auto;
 		border-radius:0;
+	}
+
+	#background{
+		min-width:0;
+		width:850px;
+		top:5em;
 	}
 	
 
@@ -488,4 +507,5 @@ Desktop: 769 px
 		margin:5%;
 		width:95%;
 	}
+
 }
