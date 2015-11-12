@@ -311,7 +311,17 @@ CONTENT
 	border-radius:0.3em;
 	padding: 2em 0 2em 0;
 }
-
+	/***************
+	Download page
+	***************/
+	.downLoadImg{
+		width:30% !important;
+		padding-bottom:1em;
+		padding-left:2em;
+		display:block;
+		
+	}
+		
 /***************
 FOOTER
 ***************/
