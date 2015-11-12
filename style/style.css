@@ -374,6 +374,10 @@ Desktop: 769 px
 	.hideMobile{
 		display: none !important;
 	}
+
+	body{
+		background-position:70%;
+	}
 	
 	header{
 		padding-bottom: 1em;
