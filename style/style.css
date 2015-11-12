@@ -209,9 +209,9 @@ Language box
 
 	z-index:1;
 	-webkit-transition: all 0.5s ease; /* Firefox */
-	  	-moz-transition: all 0.5s ease; /* WebKit */
-	  	-o-transition: all 0.5s ease; /* Opera */
-	  	transition: all 0.5s ease; /* Standard */
+	-moz-transition: all 0.5s ease; /* WebKit */
+	-o-transition: all 0.5s ease; /* Opera */
+	transition: all 0.5s ease; /* Standard */
 }
 #langBackground{
 	position:absolute;
@@ -221,9 +221,9 @@ Language box
 	height:0em;
 	background-color: rgba(0,0,0,0.4);
 	-webkit-transition: height 0.5s ease; /* Firefox */
-	  	-moz-transition: height 0.5s ease; /* WebKit */
-	  	-o-transition: height 0.5s ease; /* Opera */
-	  	transition: height 0.5s ease; /* Standard */
+	-moz-transition: height 0.5s ease; /* WebKit */
+	-o-transition: height 0.5s ease; /* Opera */
+	transition: height 0.5s ease; /* Standard */
 
 }
 .langBtn:hover{
@@ -316,6 +316,9 @@ footer{
 	margin:1em auto 0.5em auto;
 	border-radius:0.4em;
 }
+footer .flex{
+	flex-wrap: wrap;
+}
 
 /***************
 MEDIA QUERIES
@@ -366,7 +369,8 @@ Desktop: 769 px
 	}
 
 	[class*="col"]{
-		width: 100%
+		width: 100%;
+		margin: 0;
 	}
 }
 
