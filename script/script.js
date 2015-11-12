@@ -22,14 +22,14 @@ document.getElementById("readBtn").addEventListener("click",function(event){
    	event.preventDefault()
 });
 //SmoothScroll
-document.getElementById("readBtn").addEventListener("click", scrollNed);
+document.getElementById("readBtn").addEventListener("click", scrollDown);
 
 
 /*******************************
 	SCRIPT FOR SCROLLING
 ********************************/
 
-function scrollNed(){
+function scrollDown(){
 
 	event.preventDefault();
 	x=pageYOffset;
@@ -54,7 +54,7 @@ function smoothScroll(){
 /*
 Work work..
 */
-function visMobilMeny(){
+function showMobileMenu(){
 	
 	var meny = document.getElementById("menuBtns");
 	meny.classList.toggle("synlig");
