@@ -60,11 +60,11 @@ function visMobilMeny(){
 	meny.classList.toggle("synlig");
 
 	if(menyVisible){ 
-		document.getElementById("showHideMenuBtn").innerHTML="Vis meny";
+		document.getElementById("showHideMenuBtn").innerHTML="Skjul meny";
 		menyVisible = false;
 	}
 	else{ 
-		document.getElementById("showHideMenuBtn").innerHTML="Skjul meny";
+		document.getElementById("showHideMenuBtn").innerHTML="Vis meny";
 		menyVisible = true;
 	}
 	

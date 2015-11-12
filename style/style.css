@@ -422,16 +422,16 @@ Desktop: 769 px
 		flex-direction: column;
 		overflow: hidden;
 		max-height: 0px;
-		-webkit-transition: max-height 0.5s ease; /* Firefox */
-	  	-moz-transition: max-height 0.5s ease; /* WebKit */
-	  	-o-transition: max-height 0.5s ease; /* Opera */
-	  	transition: max-height 0.5s ease; /* Standard */
+		-webkit-transition: max-height 1s ease; /* Firefox */
+	  	-moz-transition: max-height 1s ease; /* WebKit */
+	  	-o-transition: max-height 1s ease; /* Opera */
+	  	transition: max-height 1s ease; /* Standard */
 	}
 	
 	/*Delete?*/
 	.synlig{
 		overflow:hidden;
-		max-height:400px !important;
+		max-height:200px !important;
 	}
 
 	/********
