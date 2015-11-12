@@ -57,7 +57,7 @@ Work work..
 function showMobileMenu(){
 	
 	var meny = document.getElementById("menuBtns");
-	meny.classList.toggle("synlig");
+	meny.classList.toggle("visible");
 
 	if(menyVisible){ 
 		document.getElementById("showHideMenuBtn").innerHTML="Skjul meny";
