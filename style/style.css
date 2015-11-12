@@ -392,10 +392,12 @@ Desktop: 769 px
 
 	#lang{
 		width:100%;
+		font-size:1.25em;
 		flex-direction: row;
 		justify-content: space-between;
 		margin:0 1em 1em 0;
 		margin-top:0;
+
 		overflow: hidden;
 	}
 	#langBox{
