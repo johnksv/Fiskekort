@@ -444,11 +444,11 @@ Desktop: 769 px
 	  	-moz-transition: max-height 1s ease; /* WebKit */
 	  	-o-transition: max-height 1s ease; /* Opera */
 	  	transition: max-height 1s ease; /* Standard */
+
 	}
 	
 	/*Delete?*/
 	.synlig{
-		overflow:hidden;
 		max-height:200px !important;
 	}
 
