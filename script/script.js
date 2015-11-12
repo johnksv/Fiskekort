@@ -83,6 +83,7 @@ function showLang(){
 		if(langVisible){
 			lang.style.height = "2em";		
 			lang.style.marginTop = "1em";
+			lang.scrollTop-=50;
 			langVisible = false;
 		
 		}
