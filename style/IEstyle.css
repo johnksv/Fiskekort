@@ -16,6 +16,7 @@ header:after {
 }
 
 
+
 .flex, #logo, #lang, nav{
 	display: inline-block;
 }
@@ -46,6 +47,6 @@ header{
 	margin: 0;
 }
 .button:hover, .button:focus, .active{
-	background-color: rgba(255,255,255,0.2);
+	background-color: #91A3B5;
 	outline:none;
 }
