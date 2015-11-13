@@ -47,6 +47,7 @@ function smoothScroll(){
 	scrollTo(0,x);	
 	if(pageYOffset<x||text.getBoundingClientRect().top<0){
 	clearInterval(intervalId);
+	text.focus();
 	}
 	
 }
