@@ -17,13 +17,14 @@
 EVENT LISTNERS
 Only for front page. Will cast error on other pages...
 *******************************/
-
-//Stops the scroling when you click the link:
-document.getElementById("readBtn").addEventListener("click",function(event){
-   	event.preventDefault()
-});
-//SmoothScroll
-document.getElementById("readBtn").addEventListener("click", scrollDown);
+function loadEventListner(){
+	//Stops the scroling when you click the link:
+	document.getElementById("readBtn").addEventListener("click",function(event){
+	   	event.preventDefault();
+	});
+	//SmoothScroll
+	document.getElementById("readBtn").addEventListener("click", scrollDown);
+}
 
 
 
