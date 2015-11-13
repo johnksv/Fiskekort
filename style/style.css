@@ -87,22 +87,28 @@ CLASSES and ID
 .button{
 	text-align:center;
 	width:25%;
-	/*background-color:gray;*/
 	color:white;
-
 	padding:1em;
 	cursor:pointer;
 	z-index:1;
 	transition:all 0.2s;
+	border-bottom: 5px solid #861B23;
 }
 
 
 .button:hover, .button:focus{
-	background-color: rgba(255,255,255,0.2);
+	background: -webkit-linear-gradient(#23476B 2.5em, #91A3B5 1px);
+  	background: -o-linear-gradient(#23476B 2.5em, #91A3B5 1px);
+  	background: -moz-linear-gradient(#23476B 2.5em, #91A3B5 1px);
+	background: linear-gradient(#23476B 2.5em, #91A3B5 1px);
 	outline:none;
 }
 .active{
-	background-color: rgba(255,255,255,0.5);
+	background: -webkit-linear-gradient(#23476B 2.5em, #861B23 1px);
+  	background: -o-linear-gradient(#23476B 2.5em, #861B23 1px);
+  	background: -moz-linear-gradient(#23476B 2.5em, #861B23 1px);
+	background: linear-gradient(#23476B 2.5em, #861B23 1px);
+	background-color: rgba(255,255,255,0.2);
 }
 
 /***************
