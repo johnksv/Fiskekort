@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+	<html lang="no">
+		<head>
+			<title>Forside | Fiskekort</title>
+
+			<!-- meta tags -->
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=1, user-scalable=yes"/>
+			<meta name="author" content="Co-authored by Stian Stensli, Truls Stensrud, Tobias Blegeberg and John Kasper Svergja">
+			<meta name="description" content="DESCRIPTION">
+			<meta name="keywords" content="KEYWORDS">
+
+			<!-- CSS & JS -->
+			<link rel="stylesheet" type="text/css" href="style/style.css">
+
+			<!-- IF IE, only for IE 9 and down. -->
+			<!--[if IE]>
+				<link rel="stylesheet" type="text/css" href="style/IEstyle.css" />
+			<![endif]-->
+
+			<noscript>
+				<link rel="stylesheet" type="text/css" href="style/noscript.css">
+			</noscript>
+
+			<!-- Fonts -->
+			<link href='https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans' rel='stylesheet' type='text/css'>
+
+			<!-- Site icon -->
+			<link rel="icon" href="images/icon.ico"> 
+			
+		</head>
+		
+		<body>
+			<a href="#content-1" id="shortcutContent">Go to main content</a>
+			<header id="header">
+				<div class="wrapper flex" id="header_wrapper">
+					<div title="Forside" id="logo">Fiskekort</div> <!-- Slutt på #logo -->
+
+					<!-- Navigation bar -->
+					<nav>
+						<a id="showHideMenuBtn" class="button" onClick="showMobileMenu()">Show menu</a>
+						<div id="menuBtns" class="flex">
+							<a class="button active" href="#">Home</a>
+							<a class="button" href="grunneiere/">For Landlords</a>	
+							<a class="button" href="faq/">FAQ</a>
+						</div>
+					</nav>
+					
+					<!-- Language chooser -->
+					<div id="lang">
+						<div id="langBox" class="flex">
+							<a id="eng" class="langBtn flex"  onclick="showLang()" title="Change language to English">
+								<img class="flag" src="images/usa.png" alt="">
+								English
+							</a>
+							<a id="nor" class="langBtn flex" onfocus="showLang()" href="index.html" title="Bytt språk til Norsk">
+								<img class="flag" src="images/norwegian.png" alt="">
+								Norsk
+							</a>
+							
+						</div> <!-- End of #langBox-->
+					</div> <!-- End of #lang -->
+				</div> <!-- End of .wrapper -->
+			</header>
+			<div id="imgMobil"></div>				
+			<div id="main">
+				<!-- Image section -->
+				<section id="banner">
+					<div class="wrapper flex">
+						<!-- Mobile Box -->
+						<div class="col-1">
+							<h1 class="text-shadow">Fishing cards on your phone</h1>
+							<span class="text-shadow" style="font-size:1.2em;">It has never been this easy!</span>
+							<!-- Buttons at image -->
+							<div id="bannerBtns">
+								<a id="downloadBtn" href="lastNed/" onfocus="showLang()">Last ned</a>
+								<a id="readBtn" href="#content-1">Les mer</a>
+							</div> <!-- End of #bannerbtns -->
+						</div> <!-- End of #col-2 -->
+					</div> <!-- End of .wrapper -->
+				</section> <!-- End of #banner -->
+				<!-- Content area -->
+				<section id="content-1">
+					<div class="wrapper flex">
+						<!-- Left column -->
+						<div class="col-1">
+
+
+							<img class="showMobile" src="imagesApp/iPhoneKartEn.png" alt="Eksempel av kartfunksjonen.">
+							
+
+						</div> <!-- End of #col-1 -->
+						<!-- Rigth column -->
+						<div class="col-2">
+							<img src="imagesApp/iPhonesokEn.png" alt="Eksempel av søkfunksjonen.">
+							<img src="imagesApp/iPhoneFiskevannEn.png" alt="Eksempel av organisajonen av fiskevann.">
+						</div> <!-- End of #col-2 -->
+					</div> <!-- End of .wrapper -->
+				</section> <!-- End of #convent-1 -->
+			</div> <!-- End of #main -->
+			<footer>
+				<div class="wrapper flex">
+					<div class="col-1">
+						<h3>Contact information</h3>
+						<ul>
+							<li>E-mail: </li>
+							<li>P35, OSLOS</li>
+						</ul>
+					</div> <!-- End of #col-1 -->
+					<div class="col-2">
+						<h3>Other links</h3>
+							<ul>
+								<li>
+									<a href="annet/#tilgjenglighet">Tilgjengelighet</a>
+								</li>
+								<li>
+									<a href="annet/#personvern">Personvern</a>
+								</li>
+								<li>
+									<a href="kart/">Nettsidekart</a>
+								</li>
+							</ul>
+					</div> <!-- End of #col-2 -->
+				</div> <!-- End of .wrapper -->
+			</footer>
+			<script src="script/script.js"></script>
+		</body>
+	</html>
