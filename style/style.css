@@ -76,7 +76,6 @@ CLASSES and ID
 }
 
 .text-shadow{
-	/* Do we want text-shadow?*/
    text-shadow:
     -1px -1px 3px #000,
     1px -1px 3px #000,
@@ -190,10 +189,11 @@ Language box
 	height:2em;
 	overflow:hidden; 
 	background-color: #23476b;
-	-webkit-transition: all 0.5s ease; /* Firefox */
-	  	-moz-transition: all 0.5s ease; /* WebKit */
-	  	-o-transition: all 0.5s ease; /* Opera */
-	  	transition: all 0.5s ease; /* Standard */
+	
+	-webkit-transition: all 0.5s ease; /* WebKit */
+	-moz-transition: all 0.5s ease; /* Firefox */
+	-o-transition: all 0.5s ease; /* Opera */
+	transition: all 0.5s ease; /* Standard */
 }
 #langBox{
 	flex-direction:column;
@@ -210,8 +210,8 @@ Language box
 	cursor:pointer;
 
 	z-index:1;
-	-webkit-transition: all 0.5s ease; /* Firefox */
-	-moz-transition: all 0.5s ease; /* WebKit */
+	-webkit-transition: all 0.5s ease; /* WebKit */
+	-moz-transition: all 0.5s ease; /* Firefox */
 	-o-transition: all 0.5s ease; /* Opera */
 	transition: all 0.5s ease; /* Standard */
 }
@@ -222,8 +222,8 @@ Language box
 	width:12em;
 	height:0em;
 	background-color: rgba(0,0,0,0.4);
-	-webkit-transition: height 0.5s ease; /* Firefox */
-	-moz-transition: height 0.5s ease; /* WebKit */
+	-webkit-transition: height 0.5s ease; /* WebKit */
+	-moz-transition: height 0.5s ease; /* Firefox */
 	-o-transition: height 0.5s ease; /* Opera */
 	transition: height 0.5s ease; /* Standard */
 
@@ -354,8 +354,6 @@ MEDIA QUERIES
 		flex-wrap: wrap;
 	}
 
-		/*Slik at kolonnene i innholdsavdelingen blir brukket opp*/
-		/*So that the columns in the content area is geting used up ????*/
 	[id*="content-"] .wrapper{
 		flex-direction: column;
 	}
@@ -485,7 +483,7 @@ MEDIA QUERIES
 		flex-direction: column;
 		overflow: hidden;
 		max-height: 0px;
-		-webkit-transition: max-height 1s ease; /* Firefox */
+		-webkit-transition: max-height 1s ease; /* Firefox */ 
 	  	-moz-transition: max-height 1s ease; /* WebKit */
 	  	-o-transition: max-height 1s ease; /* Opera */
 	  	transition: max-height 1s ease; /* Standard */
