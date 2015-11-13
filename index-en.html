@@ -40,7 +40,7 @@
 					<nav>
 						<a id="showHideMenuBtn" class="button" onClick="showMobileMenu()">Vis meny</a>
 						<div id="menuBtns" class="flex">
-							<a class="button" href="#">Forside</a>
+							<a class="button active" href="#">Forside</a>
 							<a class="button" href="grunneiere/">For grunneiere</a>	
 							<a class="button" href="faq/">Ofte stilte spørsmål</a>
 						</div>
@@ -49,20 +49,36 @@
 					<!-- Language chooser -->
 					<div id="lang">
 						<div id="langBox" class="flex">
-							<a id="nor" class="langBtn flex" onclick="showLang()" title="Bytt språk til Norsk">
-								<img class="flag" src="images/norwegian.png" alt="">
-								Norsk
-							</a>
-							<a id="eng" class="langBtn flex" onfocus="showLang()"  href="./index-en.html" title="Change language to English">
+							<a id="eng" class="langBtn flex"  onclick="showLang()" title="Change language to English">
 								<img class="flag" src="images/usa.png" alt="">
 								English
 							</a>
+							<a id="nor" class="langBtn flex" onfocus="showLang()" href="index.html" title="Bytt språk til Norsk">
+								<img class="flag" src="images/norwegian.png" alt="">
+								Norsk
+							</a>
+							
 						</div> <!-- End of #langBox-->
 					</div> <!-- End of #lang -->
 				</div> <!-- End of .wrapper -->
 			</header>
 			<div id="imgMobil"></div>				
 			<div id="main">
+				<!-- Image section -->
+				<section id="banner">
+					<div class="wrapper flex">
+						<!-- Mobile Box -->
+						<div class="col-1">
+							<h1 class="text-shadow">Fiskekort på din mobil</h1>
+							<span class="text-shadow" style="font-size:1.2em;">Aldri før har det vært lettere å kjøpe fiskekort.</span>
+							<!-- Buttons at image -->
+							<div id="bannerBtns">
+								<a id="downloadBtn" href="lastNed/" onfocus="showLang()">Last ned</a>
+								<a id="readBtn" href="#content-1">Les mer</a>
+							</div> <!-- End of #bannerbtns -->
+						</div> <!-- End of #col-2 -->
+					</div> <!-- End of .wrapper -->
+				</section> <!-- End of #banner -->
 				<!-- Content area -->
 				<section id="content-1">
 					<div class="wrapper flex">
@@ -70,14 +86,14 @@
 						<div class="col-1">
 
 
-							<img class="showMobile" src="imagesApp/iPhoneKart.png" alt="Eksempel av kartfunksjonen.">
+							<img class="showMobile" src="imagesApp/iPhoneKartEn.png" alt="Eksempel av kartfunksjonen.">
 							
 
 						</div> <!-- End of #col-1 -->
 						<!-- Rigth column -->
 						<div class="col-2">
-							<img src="imagesApp/iPhonesok.png" alt="Eksempel av søkfunksjonen.">
-							<img src="imagesApp/iPhoneFiskevann.png" alt="Eksempel av organisajonen av fiskevann.">
+							<img src="imagesApp/iPhonesokEn.png" alt="Eksempel av søkfunksjonen.">
+							<img src="imagesApp/iPhoneFiskevannEn.png" alt="Eksempel av organisajonen av fiskevann.">
 						</div> <!-- End of #col-2 -->
 					</div> <!-- End of .wrapper -->
 				</section> <!-- End of #convent-1 -->

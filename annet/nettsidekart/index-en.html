@@ -11,7 +11,7 @@
 			<meta name="keywords" content="KEYWORDS">
 
 			<!-- CSS & JS -->
-			<link rel="stylesheet" type="text/css" href="../style/style.css">
+			<link rel="stylesheet" type="text/css" href="style/style.css">
 
 			<!-- IF IE, only for IE 9 and down. -->
 			<!--[if IE]>
@@ -19,14 +19,14 @@
 			<![endif]-->
 
 			<noscript>
-				<link rel="stylesheet" type="text/css" href="../style/noscript.css">
+				<link rel="stylesheet" type="text/css" href="style/noscript.css">
 			</noscript>
 
 			<!-- Fonts -->
 			<link href='https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans' rel='stylesheet' type='text/css'>
 
 			<!-- Site icon -->
-			<link rel="icon" href="../images/icon.ico"> 
+			<link rel="icon" href="images/icon.ico"> 
 			
 		</head>
 		
@@ -40,46 +40,60 @@
 					<nav>
 						<a id="showHideMenuBtn" class="button" onClick="showMobileMenu()">Vis meny</a>
 						<div id="menuBtns" class="flex">
-							<a class="button" href="../">Forside</a>
-							<a class="button" href="../grunneiere/">For grunneiere</a>	
-							<a class="button" href="../faq/">Ofte stilte spørsmål</a>
+							<a class="button active" href="#">Forside</a>
+							<a class="button" href="grunneiere/">For grunneiere</a>	
+							<a class="button" href="faq/">Ofte stilte spørsmål</a>
 						</div>
 					</nav>
 					
 					<!-- Language chooser -->
 					<div id="lang">
 						<div id="langBox" class="flex">
-							<a id="nor" class="langBtn flex" onclick="showLang()" title="Bytt språk til Norsk">
-								<img class="flag" src="../images/norwegian.png" alt="">
-								Norsk
-							</a>
-							<a id="eng" class="langBtn flex" onfocus="showLang()"  href="./index-en.html" title="Change language to English">
-								<img class="flag" src="../images/usa.png" alt="">
+							<a id="eng" class="langBtn flex"  onclick="showLang()" title="Change language to English">
+								<img class="flag" src="images/usa.png" alt="">
 								English
 							</a>
+							<a id="nor" class="langBtn flex" onfocus="showLang()" href="index.html" title="Bytt språk til Norsk">
+								<img class="flag" src="images/norwegian.png" alt="">
+								Norsk
+							</a>
+							
 						</div> <!-- End of #langBox-->
 					</div> <!-- End of #lang -->
 				</div> <!-- End of .wrapper -->
 			</header>
 			<div id="imgMobil"></div>				
 			<div id="main">
+				<!-- Image section -->
+				<section id="banner">
+					<div class="wrapper flex">
+						<!-- Mobile Box -->
+						<div class="col-1">
+							<h1 class="text-shadow">Fiskekort på din mobil</h1>
+							<span class="text-shadow" style="font-size:1.2em;">Aldri før har det vært lettere å kjøpe fiskekort.</span>
+							<!-- Buttons at image -->
+							<div id="bannerBtns">
+								<a id="downloadBtn" href="lastNed/" onfocus="showLang()">Last ned</a>
+								<a id="readBtn" href="#content-1">Les mer</a>
+							</div> <!-- End of #bannerbtns -->
+						</div> <!-- End of #col-2 -->
+					</div> <!-- End of .wrapper -->
+				</section> <!-- End of #banner -->
 				<!-- Content area -->
 				<section id="content-1">
 					<div class="wrapper flex">
 						<!-- Left column -->
 						<div class="col-1">
 
-						<h2>Last ned appen</h2>
 
-						<p>Last ned appen og start fisketuren uten noen problemer! 
-						</p>	
+							<img class="showMobile" src="imagesApp/iPhoneKartEn.png" alt="Eksempel av kartfunksjonen.">
+							
+
 						</div> <!-- End of #col-1 -->
 						<!-- Rigth column -->
 						<div class="col-2">
-							<img class="downLoadImg" src="imagesLastned/appStore.jpg" alt="Last ned gratis i Appstore">
-							<img class="downLoadImg" src="imagesLastned/googlePlay.jpg" alt="Last ned på googleplay">
-							<img class="downLoadImg" src="imagesLastned/amazon.jpg" alt="Last ned gratis hos Amazon Appstore">
-						
+							<img src="imagesApp/iPhonesokEn.png" alt="Eksempel av søkfunksjonen.">
+							<img src="imagesApp/iPhoneFiskevannEn.png" alt="Eksempel av organisajonen av fiskevann.">
 						</div> <!-- End of #col-2 -->
 					</div> <!-- End of .wrapper -->
 				</section> <!-- End of #convent-1 -->
@@ -97,18 +111,18 @@
 						<h3>Andre lenker</h3>
 							<ul>
 								<li>
-									<a href="../annet" onfocus="showLang()">Tilgjengelighet</a>
+									<a href="annet/#tilgjenglighet">Tilgjengelighet</a>
 								</li>
 								<li>
-									<a href="../annet">Personvern</a>
+									<a href="annet/#personvern">Personvern</a>
 								</li>
 								<li>
-									<a href="../kart/">Nettsidekart</a>
+									<a href="kart/">Nettsidekart</a>
 								</li>
 							</ul>
 					</div> <!-- End of #col-2 -->
 				</div> <!-- End of .wrapper -->
 			</footer>
-			<script src="../script/script.js"></script>
+			<script src="script/script.js"></script>
 		</body>
 	</html>
