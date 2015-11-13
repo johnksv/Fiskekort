@@ -114,8 +114,6 @@ COLUMNS
 	margin: 0 auto;
 }
 
-
-
 .col-1{
 	width:50%;	
 }
@@ -137,9 +135,8 @@ COLUMNS
 HEADER
 ***************/
 header{
-	background-color: #23476b; /* old color: rgba(0,0,0,0.4); */
+	background-color: #23476b;
 	width:100%;
-
 	height:4em;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -175,9 +172,6 @@ nav{
 #showHideMenuBtn{
 	display: none;
 }
-
-
-/* Class "button" is defined in "Universale tags" */
 
 
 /**************
@@ -311,16 +305,15 @@ CONTENT
 	border-radius:0.3em;
 	padding: 2em 0 2em 0;
 }
-	/***************
-	Download page
-	***************/
-	.downLoadImg{
-		width:30% !important;
-		padding-bottom:1em;
-		padding-left:2em;
-		display:block;
-		
-	}
+/***************
+Download page
+***************/
+.downLoadImg{
+	width:30% !important;
+	padding-bottom:1em;
+	padding-left:2em;
+	display:block;
+}
 		
 /***************
 FOOTER
@@ -450,8 +443,8 @@ MEDIA QUERIES
 		border-radius:0;
 	}
 	#banner .col-1{
-	margin: 0vh 0 0vh 0;
-}
+		margin: 0;
+	}
 	footer{
 		width:100%;
 		margin:0 auto 0 auto;
@@ -461,6 +454,10 @@ MEDIA QUERIES
 		width: 100%;
 		margin: 0;
 	}
+	footer .col-2{
+		order:1;
+	}
+
 
 	#background{
 		min-width:0;
