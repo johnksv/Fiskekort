@@ -342,10 +342,12 @@ footer .flex{
 
 /***************
 MEDIA QUERIES
-Smarttelefon: 0 px - 480 px
-Nettbrett: 481 px - 768 px
-Desktop: 769 px 
 ***************/
+@media screen and (max-width:1200px){
+	.button{
+		width: 30%;
+	}
+}
 @media screen and (max-width:1024px){
 	
 	header div.wrapper{
