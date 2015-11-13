@@ -296,12 +296,8 @@ BANNER
 	outline: none;
 }
 
-#downloadBtn{
-	
-}
-
 #readBtn{
-	margin-left:17%;
+	margin-left:13%;
 }
 /***************
 CONTENT
@@ -312,6 +308,7 @@ CONTENT
 	margin:auto;
 	border-radius:0.3em;
 	padding: 2em 0 2em 0;
+	outline: none;
 }
 /***************
 Download page
@@ -337,12 +334,12 @@ footer .flex{
 	flex-wrap: wrap;
 }
 
-#background{
+#backgroundMobil{
 	display:none;
 }
 
 /***************
-MEDIA QUERIES
+Media Queris
 ***************/
 @media screen and (max-width:1200px){
 	.button{
@@ -405,7 +402,7 @@ MEDIA QUERIES
 		width: 50%;
 		margin: 0;
 	}
-	#background{
+	#backgroundMobil{
 		display:block;
 		position:fixed;
 		top:0;
@@ -468,7 +465,7 @@ MEDIA QUERIES
 	}
 
 
-	#background{
+	#backgroundMobil{
 		min-width:0;
 		width:850px;
 		top:5em;
