@@ -1,78 +1,89 @@
 <!DOCTYPE html>
 	<html lang="no">
 		<head>
-			<title>Fiskekort</title>
+			<title>Forside | Fiskekort</title>
+
+			<!-- meta tags -->
 			<meta charset="UTF-8">
-			<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport' />
-			<link rel="stylesheet" type="text/css" href="../style/style.css">
-			<script src="../script/script.js"></script>
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=1, user-scalable=yes"/>
+			<meta name="author" content="Co-authored by Stian Stensli, Truls Stensrud, Tobias Blegeberg and John Kasper Svergja">
+			<meta name="description" content="DESCRIPTION">
+			<meta name="keywords" content="KEYWORDS">
+
+			<!-- CSS & JS -->
+			<link rel="stylesheet" type="text/css" href="style/style.css">
+
+			<!-- IF IE, only for IE 9 and down. -->
+			<!--[if IE]>
+				<link rel="stylesheet" type="text/css" href="style/IEstyle.css" />
+			<![endif]-->
+
+			<noscript>
+				<link rel="stylesheet" type="text/css" href="style/noscript.css">
+			</noscript>
+
+			<!-- Fonts -->
+			<link href='https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans' rel='stylesheet' type='text/css'>
+
+			<!-- Site icon -->
+			<link rel="icon" href="images/icon.ico"> 
+			
 		</head>
 		
 		<body>
-			<header>
-				<div class="wrapper" id="header_wrapper">
-					<div id="logo">Fiskekort
-					</div> <!-- Slutt på #logo -->
+			<a href="#content-1" id="shortcutContent">Gå til hovedinnhold</a>
+			<header id="header">
+				<div class="wrapper flex" id="header_wrapper">
+					<div title="Forside" id="logo">Fiskekort</div> <!-- Slutt på #logo -->
 
-					<nav class="">
-							<a id="showHideMenuBtn" class="button" onClick="visMobilMeny()">Vis meny</a>
-							<div id="menuBtns" class="usynlig">
-								<a class="button" href="../">Forside</a>
-								<a class="button" href="#">For Grunneiere</a>	
-								<a class="button" href="../lastNed">Las ned App</a>
-							</div>
-
+					<!-- Navigation bar -->
+					<nav>
+						<a id="showHideMenuBtn" class="button" onClick="showMobileMenu()">Vis meny</a>
+						<div id="menuBtns" class="flex">
+							<a class="button active" href="#">Forside</a>
+							<a class="button" href="grunneiere/">For grunneiere</a>	
+							<a class="button" href="faq/">Ofte stilte spørsmål</a>
+						</div>
 					</nav>
-
+					
+					<!-- Language chooser -->
 					<div id="lang">
-						
-						<a id="nor" class="langBtn" onClick="visLang()" title="Bytt språk til Norsk">
-							<img class="flag" src="../images/norwegian.png" alt="Bilde av norsk flagg">
-							Norsk
-						</a>
-						<a id="eng" class="langBtn" href="./index-en.html" title="Change language to English">
-							<img class="flag" src="../images/usa.png" alt="Bilde av engelsk flagg">
-							English
-						</a>
-						<a id="ger" class="langBtn" href="./index-de.html" title="Siehe Seite auf Deutsch">
-							<img class="flag" src="../images/german.png" alt="Bilde av tysk flagg">
-							Deutsch
-						</a>
-
+						<div id="langBox" class="flex">
+							<a id="nor" class="langBtn flex" onclick="showLang()" title="Bytt språk til Norsk">
+								<img class="flag" src="images/norwegian.png" alt="">
+								Norsk
+							</a>
+							<a id="eng" class="langBtn flex" onfocus="showLang()"  href="index-en.html" title="Change language to English">
+								<img class="flag" src="images/usa.png" alt="">
+								English
+							</a>
+						</div> <!-- End of #langBox-->
 					</div> <!-- End of #lang -->
 				</div> <!-- End of .wrapper -->
 			</header>
+			<div id="imgMobil"></div>				
 			<div id="main">
-				
-				<section id="content-1">
-					<div class="wrapper">
+				<!-- Content area -->
+				<section id="content-1" tabindex="-1">
+					<div class="wrapper flex">
+						<!-- Left column -->
 						<div class="col-1">
-							<h1>For deg som grunneier</h1>
+
+
+							<img class="showMobile" src="imagesApp/iPhoneKart.png" alt="Eksempel av kartfunksjonen.">
 							
-							<p>
-							Vi som jobber med fiskekortappen har et sterkt ønske om å samarbeide med alle grunneiere, alt fra privat personer til allmenninger. For uten samarbeid med dere som eier vannene vil appen vår bli umulig å gjennomføre. Heldigvis har vi mange positive grunner til at et samarbeid vil være meget gunstig for begge parter.
-							</p>
-							<p>
-							Vår app har som sitt største formål om å selge fiskekort. Vi diskuterer fortsatt på om den riktige løsningen for oss er å ta en prosentandel av prisen til fiskekort eller om en annen løsning er mer lønnsomt både finansiellt og med hensyn til vårt samarbeid. Vi har virkelig et stort ønske om sammarbeid så det er viktig for oss også å ha kontakt, så om dere har et ønske om å komme med råd eller spørsmål så er det alltid mulig å kontakte oss. 
-							</p>
-							<p>
-							Vi ser også på vår app som en mulighet for grunneiere å informere kort og langt om sitt vann. Det første en bruker vil se er det viktigste som pris og typer fisk i vannet, vil det også være mulig å trykke på mer info for å linke opp til mer informasjon fra dere. Dere kan da linke opp mot deres egen hjemmeside sånn at brukeren kan få opplysninger om ting som kanoutleie eller regler om båltening og kanskje også annet info om lokale organisasjoner eller om morsomme nyheter og stevner som skjer i nærområdet. Vi vil selvsagt gi dere oversikt over antall besøk og annen statistikk.
-							</p>
-							<p>
-							Ikke minst så tilbyr vi tre forskjellige språk, Norsk, Tysk og Engelsk. Og vi vil gjøre det mulig og søkke opp alle tilrettelagte fikse steder for de som trenger det. Allt dette er for å få flest som mulig til å fiske og derfor også få flest mulig til å kjøpe fiskekort, noe som kanskje ikke alle turister tenker på når de drar på camping ferie til norge.
-							</p>
-							<p>		
-							Appen vil være lett å kontrolere for tilsynsmenn og fangstraportering vil bli mye lettere å registrere. Dette er mulighetene vi tilbyr og vi vil gjøre allt vi kan for å få den appen til å bli den enkleste og kjappeste muligheten for alle som ønsker å fiske i norskevann.
-							</p>
+
 						</div> <!-- End of #col-1 -->
+						<!-- Rigth column -->
 						<div class="col-2">
-							<img src="../images/fishing.png" alt="">
+							<img src="imagesApp/iPhonesok.png" alt="Eksempel av søkfunksjonen.">
+							<img src="imagesApp/iPhoneFiskevann.png" alt="Eksempel av organisajonen av fiskevann.">
 						</div> <!-- End of #col-2 -->
 					</div> <!-- End of .wrapper -->
 				</section> <!-- End of #convent-1 -->
 			</div> <!-- End of #main -->
 			<footer>
-				<div class="wrapper">
+				<div class="wrapper flex">
 					<div class="col-1">
 						<h3>Kontaktinformasjon</h3>
 						<ul>
@@ -82,9 +93,20 @@
 					</div> <!-- End of #col-1 -->
 					<div class="col-2">
 						<h3>Andre lenker</h3>
-						<p></p>
+							<ul>
+								<li>
+									<a href="annet/#tilgjenglighet">Tilgjengelighet</a>
+								</li>
+								<li>
+									<a href="annet/#personvern">Personvern</a>
+								</li>
+								<li>
+									<a href="nettsidekart/">Nettsidekart</a>
+								</li>
+							</ul>
 					</div> <!-- End of #col-2 -->
 				</div> <!-- End of .wrapper -->
 			</footer>
+			<script src="script/script.js"></script>
 		</body>
 	</html>
