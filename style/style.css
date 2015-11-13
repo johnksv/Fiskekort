@@ -41,6 +41,9 @@ h2,h3{
 p, span, #main a {
 	font-family: 'Open Sans', sans-serif;
 }
+span{
+	font-size: 1.2em
+}
 
 p{
 	line-height: 1.8em;
