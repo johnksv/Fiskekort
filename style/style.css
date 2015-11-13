@@ -345,6 +345,9 @@ MEDIA QUERIES
 	.button{
 		width: 30%;
 	}
+	nav{
+		width: 65%;
+	}
 }
 @media screen and (max-width:1024px){
 	
