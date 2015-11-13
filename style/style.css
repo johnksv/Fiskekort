@@ -310,6 +310,11 @@ CONTENT
 	padding: 2em 0 2em 0;
 	outline: none;
 }
+#salgsTekst{
+	text-align: center;
+	margin-bottom: 3em;
+}
+
 /***************
 Download page
 ***************/

@@ -28,7 +28,7 @@ function loadEventListner(){
 
 
 
-document.getElementById("imgMobil").innerHTML = '<img id="backgroundMobil" src="images/lake.jpg" alt="">';
+document.getElementById("imgMobil").innerHTML = '<img id="backgroundMobil" src="../images/lake.jpg" alt="">';
 
 /*******************************
 	SCRIPT FOR SCROLLING
