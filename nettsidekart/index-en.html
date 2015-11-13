@@ -11,7 +11,7 @@
 			<meta name="keywords" content="KEYWORDS">
 
 			<!-- CSS & JS -->
-			<link rel="stylesheet" type="text/css" href="style/style.css">
+			<link rel="stylesheet" type="text/css" href="../style/style.css">
 
 			<!-- IF IE, only for IE 9 and down. -->
 			<!--[if IE]>
@@ -19,14 +19,14 @@
 			<![endif]-->
 
 			<noscript>
-				<link rel="stylesheet" type="text/css" href="style/noscript.css">
+				<link rel="stylesheet" type="text/css" href="../style/noscript.css">
 			</noscript>
 
 			<!-- Fonts -->
 			<link href='https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans' rel='stylesheet' type='text/css'>
 
 			<!-- Site icon -->
-			<link rel="icon" href="images/icon.ico"> 
+			<link rel="icon" href="../images/icon.ico"> 
 			
 		</head>
 		
@@ -34,27 +34,27 @@
 			<a href="#content-1" id="shortcutContent">Jump to main-content</a>
 			<header id="header">
 				<div class="wrapper flex" id="header_wrapper">
-					<div title="Forside" id="logo">Fiskekort</div> <!-- Slutt på #logo -->
+					<div title="Forside" id="logo">Fiskekort</div> 
 
 					<!-- Navigation bar -->
 					<nav>
 						<a id="showHideMenuBtn" class="button" onClick="showMobileMenu()">Show menu</a>
 						<div id="menuBtns" class="flex">
 							<a class="button active" href="#">Home</a>
-							<a class="button" href="grunneiere/index-en.html">Landlords</a>	
+							<a class="button" href="grunneiere/index-en.html">For Landlords</a>	
 							<a class="button" href="faq//index-en.html">Frequently asked questions</a>
-						</div>
+						</div> <!-- Slutt på #menuBtns -->
 					</nav>
 					
 					<!-- Language chooser -->
 					<div id="lang">
 						<div id="langBox" class="flex">
 							<a id="eng" class="langBtn flex"  onclick="showLang()" title="Change language to English">
-								<img class="flag" src="images/usa.png" alt="">
+								<img class="flag" src="../images/usa.png" alt="">
 								English
 							</a>
 							<a id="nor" class="langBtn flex" onfocus="showLang()" href="index.html" title="Bytt språk til Norsk">
-								<img class="flag" src="images/norwegian.png" alt="">
+								<img class="flag" src="../images/norwegian.png" alt="">
 								Norsk
 							</a>
 							
@@ -65,20 +65,20 @@
 			<div id="imgMobil"></div>				
 			<div id="main">
 				<!-- Content area -->
-				<section id="content-1">
+				<section id="content-1" tabindex="-1">
 					<div class="wrapper flex">
 						<!-- Left column -->
 						<div class="col-1">
 
 
-							<img class="showMobile" src="imagesApp/iPhoneKartEn.png" alt="Eksempel av kartfunksjonen.">
+							<img class="showMobile" src="../imagesApp/iPhoneKartEn.png" alt="Eksempel av kartfunksjonen.">
 							
 
 						</div> <!-- End of #col-1 -->
 						<!-- Rigth column -->
 						<div class="col-2">
-							<img src="imagesApp/iPhonesokEn.png" alt="Eksempel av søkfunksjonen.">
-							<img src="imagesApp/iPhoneFiskevannEn.png" alt="Eksempel av organisajonen av fiskevann.">
+							<img src="../imagesApp/iPhonesokEn.png" alt="Eksempel av søkfunksjonen.">
+							<img src="../imagesApp/iPhoneFiskevannEn.png" alt="Eksempel av organisajonen av fiskevann.">
 						</div> <!-- End of #col-2 -->
 					</div> <!-- End of .wrapper -->
 				</section> <!-- End of #convent-1 -->
@@ -88,26 +88,27 @@
 					<div class="col-1">
 						<h3>Contact</h3>
 						<ul>
-							<li>E-mail: </li>
-							<li>P35, OSLOS</li>
+							<li>E-mail: <a href="mailto:fiskekortapp@gmail.com">fiskekortapp@gmail.com</a></li>
+							<li>Office address: Pilstredet 35, 0166 Oslo</li>
+							<li>Support phone: +47 123 45 678</li>
 						</ul>
 					</div> <!-- End of #col-1 -->
 					<div class="col-2">
 						<h3>Other links</h3>
 							<ul>
 								<li>
-									<a href="annet/index-en.html#tilgjenglighet">Accessebility</a>
+									<a href="../annet/index-en.html#tilgjenglighet">Accessebility</a>
 								</li>
 								<li>
-									<a href="annet/index-en.html#personvern">Privacy</a>
+									<a href="../annet/index-en.html#personvern">Privacy</a>
 								</li>
 								<li>
-									<a href="nettsidekartkart/index-en.html">Map</a>
+									<a href="../nettsidekartkart/index-en.html">Map</a>
 								</li>
 							</ul>
 					</div> <!-- End of #col-2 -->
 				</div> <!-- End of .wrapper -->
 			</footer>
-			<script src="script/script.js"></script>
+			<script src="../script/script.js"></script>
 		</body>
 	</html>
