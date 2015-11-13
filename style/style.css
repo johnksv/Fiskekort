@@ -77,6 +77,10 @@ CLASSES and ID
 	display: -ms-flexbox;
 	display: flex;
 }
+.flexwrap {
+    flex-wrap: wrap;
+}
+
 
 .text-shadow{
    text-shadow:
@@ -86,7 +90,7 @@ CLASSES and ID
     1px 1px 3px #000; 
 	
 }
-.button{
+.navbutton{
 	text-align:center;
 	width:25%;
 	color:white;
@@ -97,7 +101,7 @@ CLASSES and ID
 }
 
 
-.button:hover, .button:focus{
+.navbutton:hover, .navbutton:focus{
 	background: -webkit-linear-gradient(#23476B 2.5em, #91A3B5 1px);
   	background: -o-linear-gradient(#23476B 2.5em, #91A3B5 1px);
   	background: -moz-linear-gradient(#23476B 2.5em, #91A3B5 1px);
@@ -126,7 +130,6 @@ COLUMNS
 }
 .col-1 img{
 	width:100%;
-	display:none;
 }
 .col-2{
 	width:40%;
@@ -237,15 +240,6 @@ Language box
 	background-color: rgba(256,256,256,0.2);
 	outline:none;
 }
-#nor{
-	
-}
-#eng{
-	
-}
-#ger{
-	
-}
 .flag{
 	width:1.5em;
 	height:0.8em;
@@ -266,31 +260,24 @@ BANNER
 #banner h1{
 	font-size: 2.5em;
 }
-#banner ul{
-	font-size:1.2em;
-	line-height:1.5em;
-}
-#banner .col-1{
+
+#bannerBox{
 	width: 100%;
 	margin: 20vh 0 40vh 0;
 	font-size:1em;
 }
 
-#banner li{
-	margin:1em;
-}
-
-#bannerBtns{
+.buttonContainer{
 	margin-top: 3em;
 }
 
-#bannerBtns a{
+.button{
 	color: white;
     padding: 1em 5%;
     background-color: #861B23;
     border: 1px solid black;
 }
-#bannerBtns a:hover, #bannerBtns a:focus{
+.button:hover, .button:focus{
 	color: black;
 	background-color: #CFCFCF;
 	outline: none;
@@ -302,12 +289,25 @@ BANNER
 /***************
 CONTENT
 ***************/
+
+#frontPageImg {
+    text-align: center;
+    width: 100%;
+}
+#frontPageImg img {
+    width: 35%;
+}
+#frontPageText {
+    width: 70%;
+}
+
+
 #content-1{
 	background-color:#F1F1F1;
 	width:90%;
 	margin:auto;
 	border-radius:0.3em;
-	padding: 2em 0 2em 0;
+	padding: 2em 0 5em 0;
 	outline: none;
 }
 #salgsTekst{
@@ -347,7 +347,7 @@ footer .flex{
 Media Queris
 ***************/
 @media screen and (max-width:1200px){
-	.button{
+	.navbutton{
 		width: 30%;
 	}
 	nav{
@@ -368,7 +368,6 @@ Media Queris
 		height:auto;
 	}
 
-
 	nav{
 		width:100%;
 		margin:0;
@@ -379,7 +378,7 @@ Media Queris
 		justify-content: space-around;
 	}
 
-	.button{ 
+	.navbutton{ 
 		width:33%;
 	}
 	#langBackground{
@@ -397,6 +396,13 @@ Media Queris
 
 	.col-2 img{
 		width:49%;
+	}
+
+	#frontPageImg img {
+    width: 49%;
+	}
+	#frontPageText {
+	    width: 100%;
 	}
 
 	[class*="col"]{
@@ -449,11 +455,17 @@ Media Queris
 	#langBox{
     	justify-content: space-around;
 	}
+	.active{
+		/*Removes background on active button*/
+		background: url();
+	}
+
+
 	#content-1{
 		width:100%;
 		border-radius:0;
 	}
-	#banner .col-1{
+	#bannerBox{
 		margin: 0;
 	}
 	footer{
@@ -505,7 +517,7 @@ Media Queris
 	/********
 	Content
 	*******/
-	.button{
+	.navbutton{
 		width:80%;
 		margin:auto;
 		border-top:1px solid white;
@@ -523,11 +535,4 @@ Media Queris
 	.col-2 img{
 		width:49%;
 	}
-
-
-	#banner .col-2{
-		margin:5%;
-		width:95%;
-	}
-
 }

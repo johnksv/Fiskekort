@@ -40,9 +40,9 @@
 					<nav>
 						<a id="showHideMenuBtn" class="button" onClick="showMobileMenu()">Show menu</a>
 						<div id="menuBtns" class="flex">
-							<a class="button active" href="#">Home</a>
-							<a class="button" href="grunneiere/index-en.html">For Landlords</a>	
-							<a class="button" href="faq/index-en.html">Frequently asked questions</a>
+							<a class="navbutton active" href="#">Home</a>
+							<a class="navbutton" href="grunneiere/index-en.html">For Landlords</a>	
+							<a class="navbutton" href="faq/index-en.html">Frequently asked questions</a>
 						</div>
 					</nav>
 					
@@ -68,33 +68,41 @@
 				<section id="banner">
 					<div class="wrapper flex">
 						<!-- Mobile Box -->
-						<div class="col-1">
+						<div id="bannerBox">
 							<h1 class="text-shadow">Fiskekort on your phone</h1>
 							<span class="text-shadow">Something in english from Tobias.</span>
 							<!-- Buttons at image -->
-							<div id="bannerBtns">
-								<a id="downloadBtn" href="lastNed/index-en.html" onfocus="showLang()">Download</a>
-								<a id="readBtn" href="#content-1">Read more</a>
+							<div id="buttonContainer">
+								<a class="button" href="lastNed/index-en.html" onfocus="showLang()">Download app</a>
+								<a class="button" id="readBtn" href="#content-1">Read more</a>
 							</div> <!-- End of #bannerbtns -->
 						</div> <!-- End of #col-2 -->
 					</div> <!-- End of .wrapper -->
 				</section> <!-- End of #banner -->
 				<!-- Content area -->
-				<section id="content-1">
-					<div class="wrapper flex">
-						<!-- Left column -->
-						<div class="col-1">
+				<section id="content-1" tabindex="-1">
+					<div id="salgsTekst">
+						<h2>Hvordan fungerer det</h2>
+						<p>1. Søk på fiskevannet du vil fiske i, eller velg det fra kartet</p>
+						<p>2. Se informasjon om fiskevannet</p>
+						<p>3. Velg type fiskekort og startdato</p>
+						<p>4. Fullfør kjøpet</p>
+						<p>Fiskekortet er lastet ned til din mobil. Skitt fiske!</p>
+					</div>
+					<hr>
+					<div class="wrapper flex flexwrap">
 
-
+						<div id="frontPageImg">
 							<img class="showMobile" src="imagesApp/iPhoneKartEn.png" alt="Image of how the map feature is shown in the mobile application.">
-							
-
-						</div> <!-- End of #col-1 -->
-						<!-- Rigth column -->
-						<div class="col-2">
-							<img src="imagesApp/iPhonesokEn.png" alt="Image of how the search function in the mobile application looks.">
 							<img src="imagesApp/iPhoneFiskevannEn.png" alt="Image of how information about one spesific fishingwater is displayed in the mobile application.">
-						</div> <!-- End of #col-2 -->
+						</div> <!-- End of #frontPageImg -->
+
+						<div id="frontPageText">
+							<img src="imagesApp/iPhonesokEn.png" alt="Image of how the search function in the mobile application looks.">
+							<div class="buttonContainer">
+								<a class="button" href="lastNed/" onfocus="showLang()">Download app</a>
+							</div>
+						</div> <!-- End of #frontPageText -->
 					</div> <!-- End of .wrapper -->
 				</section> <!-- End of #convent-1 -->
 			</div> <!-- End of #main -->

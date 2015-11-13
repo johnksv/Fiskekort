@@ -40,9 +40,9 @@
 					<nav>
 						<a id="showHideMenuBtn" class="button" onClick="showMobileMenu()">Vis meny</a>
 						<div id="menuBtns" class="flex">
-							<a class="button active" href="#">Forside</a>
-							<a class="button" href="grunneiere/">For grunneiere</a>	
-							<a class="button" href="faq/">Ofte stilte spørsmål</a>
+							<a class="navbutton active" href="#">Forside</a>
+							<a class="navbutton" href="grunneiere/">For grunneiere</a>	
+							<a class="navbutton" href="faq/">Ofte stilte spørsmål</a>
 						</div>
 					</nav>
 					
@@ -67,13 +67,13 @@
 				<section id="banner">
 					<div class="wrapper flex">
 						<!-- Mobile Box -->
-						<div class="col-1">
+						<div id="bannerBox">
 							<h1 class="text-shadow">Fiskekort på din mobil</h1>
 							<span class="text-shadow">Aldri før har det vært enklere å kjøpe fiskekort.</span>
 							<!-- Buttons at image -->
-							<div id="bannerBtns">
-								<a id="downloadBtn" href="lastNed/" onfocus="showLang()">Last ned</a>
-								<a id="readBtn" href="#content-1">Les mer</a>
+							<div class="buttonContainer">
+								<a class="button" href="lastNed/" onfocus="showLang()">Last ned app</a>
+								<a class="button" id="readBtn" href="#content-1">Les mer</a>
 							</div> <!-- End of #bannerbtns -->
 						</div> <!-- End of #col-2 -->
 					</div> <!-- End of .wrapper -->
@@ -89,12 +89,16 @@
 						<p>Fiskekortet er lastet ned til din mobil. Skitt fiske!</p>
 					</div>
 					<hr>
-					<div class="wrapper flex">
-						<!-- Left column -->
-						<div class="col-1">
+					<div class="wrapper flex flexwrap">
+	
+						<div id="frontPageImg">
+							<img class="" src="imagesApp/iPhoneKart.png" alt="Bilde som viser kartfunksjonen.">
+							<img src="imagesApp/iPhoneFiskevann.png" alt="Bilde som viser hvordan informasjon om et spesifikt fiskevann vises.">
+						</div> <!-- End of #frontPageImg -->
 
+						<div id="frontPageText">
 							<h2>Kjøp av fiskekort</h2>
-							<p>Tidligere var det vanskelig å vite hvor man kunne kjøpe fiskekort, og for hvilke fiskevann og soner det gjaldt for. Med Fiskekort på mobil kan du nå kjøpe fiskekort på en enkel måte. Uavhengig om du er en erfaren fisker, nybegynner, eller bare vil ta en fisketur med familien eller venner.</p>
+							<p>Tidligere var det vanskelig å vite hvor man kunne kjøpe fiskekort, og for hvilke fiskevann og soner det gjaldt for. Med Fiskekort på mobil kan du nå kjøpe fiskekort på en enkel måte, uavhengig om du er en erfaren fisker, nybegynner, eller bare vil ta en fisketur med familien eller venner.</p>
 							<hr>
 
 							<h2>Rask oversikt over fiskevann og soner</h2>
@@ -107,14 +111,11 @@
 
 							<h2>Finn fiskevann som oppfyller dine krav</h2>
 							<p>Hvert fiskevann har hver sine restriksjoner. Fisketyper i vannet, og når på året det er lov å fiske kan ofte variere. Fiskekort på mobil setter deg i høysetet. På en lett måte kan du finne ut hvilke fiskevann som tillater fluefiske, otring, eller hvilke fiskevann som inneholder røy, ørret osv. Alt ved hjelp av vårt søkfilter.</p>
-
-							<img class="" src="imagesApp/iPhoneKart.png" alt="Bilde som viser kartfunksjonen.">
-						</div> <!-- End of #col-1 -->
-						<!-- Rigth column -->
-						<div class="col-2">
-							<img src="imagesApp/iPhonesok.png" alt="Bilde som viser hvordan søk på fiskevann fungerer..">
-							<img src="imagesApp/iPhoneFiskevann.png" alt="Bilde som viser hvordan informasjon om et spesifikt fiskevann vises.">
-						</div> <!-- End of #col-2 -->
+							<div class="buttonContainer">
+								<a class="button" href="lastNed/" onfocus="showLang()">Last ned app</a>
+							</div>
+							<!-- <img src="imagesApp/iPhonesok.png" alt="Bilde som viser hvordan søk på fiskevann fungerer.."> -->
+						</div> <!-- End of #frontPageText -->
 					</div> <!-- End of .wrapper -->
 				</section> <!-- End of #convent-1 -->
 			</div> <!-- End of #main -->
