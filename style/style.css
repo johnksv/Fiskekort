@@ -515,6 +515,9 @@ Media Queries
 		width:100%;
 		border-radius:0;
 	}
+	#content-1 a{
+		word-break:break-all;
+	}
 	#bannerBox{
 		margin: 0;
 	}
