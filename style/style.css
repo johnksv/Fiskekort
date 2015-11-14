@@ -182,9 +182,6 @@ header{
 	background-color: #23476b;
 	width:100%;
 	height:4em;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex; 
 }
 #header_wrapper{
 	width:100%;
