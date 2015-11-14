@@ -36,7 +36,7 @@ document.getElementById("imgMobil").innerHTML = '<img id="backgroundMobil" src="
 
 function scrollDown(){
 
-	
+	event.preventDefault();
 	x=pageYOffset;
 	text = document.getElementById("content-1");
 	intervalId = setInterval(smoothScroll,15);
