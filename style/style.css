@@ -317,6 +317,9 @@ footer{
 	margin:1em auto 0.5em auto;
 	border-radius:0.4em;
 }
+footer a{
+	color:#0000aa;
+}
 footer .flex{
 	flex-wrap: wrap;
 }
