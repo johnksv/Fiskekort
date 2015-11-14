@@ -60,6 +60,9 @@ hr{
 /***************
 CLASSES and ID
 ***************/
+.textCenter{
+	text-align: center;
+}
 #shortcutContent{
 	position: absolute;
 	top: -2000px;
@@ -162,7 +165,6 @@ header{
 	width:10%;
 	color:white;
 	font-size:2em;
-	text-align:center;
 	line-height:2em;
 }
 
@@ -259,7 +261,6 @@ CONTENT
 ***************/
 
 #frontPageImg {
-    text-align: center;
     width: 100%;
 }
 #frontPageImg img {
@@ -278,9 +279,11 @@ CONTENT
 	padding: 2em 0 5em 0;
 	outline: none;
 }
-#salgsTekst{
-	text-align: center;
-	margin-bottom: 3em;
+#introTekst{
+	margin: 3em 0 5em 0;
+}
+#introTekst h1{
+	font-size: 2em;
 }
 
 /***************
@@ -390,8 +393,16 @@ Media Queris
 }
 
 @media screen and (max-width:550px){
-	.hideMobile{
-		display: none !important;
+	.mobileOrder-1{
+	order:1;
+	}
+	.mobileOrder-2{
+		order:2;
+	}
+	#backgroundMobil{
+		min-width:0;
+		width:850px;
+		top:5em;
 	}
 
 	body{
@@ -413,10 +424,7 @@ Media Queris
 		margin: 0.5em 0 1em 0;
     	justify-content: space-around;
 	}
-	.active{
-		/*Removes background on active button*/
-		background: url();
-	}
+
 
 
 	#content-1{
@@ -435,21 +443,16 @@ Media Queris
 		width: 100%;
 		margin: 0;
 	}
-	footer .col-2{
-		order:1;
-	}
 
-
-	#backgroundMobil{
-		min-width:0;
-		width:850px;
-		top:5em;
-	}
 	
 
 	/***************
 	MOBILE MENU
 	***************/
+	.active{
+		/*Removes background on active button menu*/
+		background: url();
+	}
 
 	#showHideMenuBtn{
 		border:1px solid white;
@@ -479,7 +482,6 @@ Media Queris
 		width:80%;
 		margin:auto;
 		border-top:1px solid white;
-		text-align:center;
 	}
 
 	.readBtn{

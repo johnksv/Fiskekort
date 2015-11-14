@@ -34,11 +34,11 @@
 			<a href="#content-1" id="shortcutContent">Gå til hovedinnhold</a>
 			<header id="header">
 				<div class="wrapper flex" id="header_wrapper">
-					<div title="Forside" id="logo">Fiskekort</div> <!-- Slutt på #logo -->
+					<div title="Forside" id="logo" class="textCenter">Fiskekort</div> <!-- Slutt på #logo -->
 
 					<!-- Navigation bar -->
 					<nav>
-						<a id="showHideMenuBtn" class="button" onClick="showMobileMenu()">Vis meny</a>
+						<a id="showHideMenuBtn" class="navbutton" onClick="showMobileMenu()">Vis meny</a>
 						<div id="menuBtns" class="flex">
 							<a class="navbutton" href="../">Forside</a>
 							<a class="navbutton active" href="../grunneiere/">For grunneiere</a>	
@@ -63,26 +63,43 @@
 			<div id="main">
 				<!-- Content area -->
 				<section id="content-1" tabindex="-1">
+					<div id="introTekst" class="textCenter">
+						<h1>For grunneiere</h1>
+						<span>Aldri før har det vært så lett å selge fiskekort</span>
+					</div>
+					<hr>
 					<div class="wrapper flex">
 						<!-- Left column -->
-						<div class="col-1">
+						<div class="col-1 mobileOrder-2">
 
+							<h2>Gjør fiskevannene dine lette å finne</h2>
+							<p>Når du som grunneier publiserer dine fiskevann blir de automatisk søkbare og synlig for alle brukere av fiskekort på mobil. Informasjonen du har oppgitt gjør at brukere lett kan søke opp ditt vann, blant annet ved å søke på navnet, område eller ved bruk av ett filter.</p>
+							<hr>
 
-							<img class="showMobile" src="../imagesApp/iPhoneKart.png" alt="Eksempel av kartfunksjonen.">
+							<h2>Gunnstig</h2>
+							<p>Ved å formidle informasjon om ditt vann hos oss vil dette gjøre deg mer synlig for fiskere. Dette vil kunne bidra til å øke din omsetning. Fiskekort på mobil tar 5% av fortjenesten per fiskekort. Dette for å dekke drift og vedlikehold av tjenesten. Resten av pengene går uavkortet til grunneieren.</p>
+							<hr>
+
+							<h2>Hvordan legge inn fiskevann og soner</h2>
+							<p>For å legge inn dine fiskevann og soner logger du på vår nettportal (åpner februar 2016). Fra nettportalen kan du enkelt legge inn nye, samt endre på eksisterende fiskevann og soner. Enklere blir det ikke!</p>
+							<p>NB: Før du kan publisere fiskevann og soner må du kunne fremvise at du er grunneier. Ta kontakt med din kommune om du mangler dokumenter som bekrefter dette.</p>
+							<hr>
+
+							<h2>Data til statistikk</h2>
+							<p>Grunneiere vil få tilgang på data knyttet til sine fiskevann og soner gjennom nettportalen. Det vil si at du som grunneier kan bedre holde oversikt over hvor mange som besøker ditt område. kan også komme godt med som  reklame for turistindustrien.</p>					
 							
 
 						</div> <!-- End of #col-1 -->
 						<!-- Rigth column -->
-						<div class="col-2">
-							<img src="../imagesApp/iPhonesok.png" alt="Eksempel av søkfunksjonen.">
-							<img src="../imagesApp/iPhoneFiskevann.png" alt="Eksempel av organisajonen av fiskevann.">
+						<div class="col-2 mobileOrder-1 textCenter">
+							<img src="../imagesApp/iPhonesok.png" alt="Bilde som viser hvordan søk på fiskevann fungerer..">
 						</div> <!-- End of #col-2 -->
 					</div> <!-- End of .wrapper -->
 				</section> <!-- End of #convent-1 -->
 			</div> <!-- End of #main -->
 			<footer>
 				<div class="wrapper flex">
-					<div class="col-1">
+					<div class="col-1 mobileOrder-2">
 						<h3>Kontaktinformasjon</h3>
 						<ul>
 							<li>E-post: <a href="mailto:fiskekortapp@gmail.com">fiskekortapp@gmail.com</a></li>
@@ -90,7 +107,7 @@
 							<li>Supporttelefon: +47 123 45 678</li>
 						</ul>
 					</div> <!-- End of #col-1 -->
-					<div class="col-2">
+					<div class="col-2 mobileOrder-1">
 						<h3>Andre lenker</h3>
 							<ul>
 								<li>
