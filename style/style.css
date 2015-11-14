@@ -518,9 +518,11 @@ Media Queries
 	#bannerBox{
 		margin: 0;
 	}
-
 	#readBtn{
 		margin-left:0;
+	}
+	.headingText{
+		width: 95%;
 	}
 
 	/********
