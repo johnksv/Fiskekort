@@ -1,7 +1,10 @@
 /*******************************
 	Load backgroundimage for mobil
+	Dirtyhack for student server..
 *******************************/
-document.getElementById("imgMobil").innerHTML = '<img id="backgroundMobil" src="/images/lake.jpg" alt="">';
+var str = window.location.href;
+var result = str.substr(0,str.indexOf("Fiskekort")+9);
+document.getElementById("imgMobil").innerHTML = '<img id="backgroundMobil" src="'+result+'/images/lake.jpg" alt="">';
 
 /*******************************
 	VARIABLES FOR FUNCTIONS
