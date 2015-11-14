@@ -170,7 +170,7 @@ header{
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    
     cursor: default;
 	width:10%;
 	color:white;
