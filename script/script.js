@@ -1,4 +1,9 @@
 /*******************************
+	Load backgroundimage for mobil
+*******************************/
+document.getElementById("imgMobil").innerHTML = '<img id="backgroundMobil" src="/images/lake.jpg" alt="">';
+
+/*******************************
 	VARIABLES FOR FUNCTIONS
 *******************************/
 //Smooth Scroll
@@ -15,7 +20,7 @@
 
 /*******************************
 EVENT LISTNERS
-Only for front page. Will cast error on other pages...
+Change focus is blocked on mobile...
 *******************************/
 function loadEventListner(){
 	//Stops the scroling when you click the link:
@@ -26,9 +31,6 @@ function loadEventListner(){
 	document.getElementById("readBtn").addEventListener("click", scrollDown);
 }
 
-
-
-document.getElementById("imgMobil").innerHTML = '<img id="backgroundMobil" src="/images/lake.jpg" alt="">';
 
 /*******************************
 	SCRIPT FOR SCROLLING
