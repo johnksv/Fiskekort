@@ -75,29 +75,3 @@ function showMobileMenu(){
 	}
 	
 }
-
-/*
-Too scared to start changing this whene one is a 
-var name in english and another is a function in norwegian
-See: visLang and showLang...
-	
-
-function showLang(){
-	if(window.innerWidth>1024)
-	{
-	var lang = document.getElementById("lang");
-		if(langVisible){
-			lang.style.height = "2em";		
-			lang.style.marginTop = "1em";
-			lang.scrollTop-=50;
-			langVisible = false;
-		
-		}
-		else{
-			lang.style.height = "4em";
-			lang.style.marginTop = "0em";
-				langVisible = true;
-		}
-	}
-}
-*/	
