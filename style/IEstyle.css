@@ -37,7 +37,7 @@ header{
 	overflow: visible;
 
 }
-#bannerBtns {
+.buttonContainer {
     margin-bottom: 3em;
 }
 #banner .col-1 {
