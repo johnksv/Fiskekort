@@ -80,7 +80,7 @@ function showMobileMenu(){
 Too scared to start changing this whene one is a 
 var name in english and another is a function in norwegian
 See: visLang and showLang...
-*/		
+	
 
 function showLang(){
 	if(window.innerWidth>1024)
@@ -100,3 +100,4 @@ function showLang(){
 		}
 	}
 }
+*/	
