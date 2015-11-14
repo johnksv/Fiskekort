@@ -173,6 +173,7 @@ header{
 	color:white;
 	font-size:2em;
 	line-height:2em;
+
 }
 
 
@@ -286,10 +287,10 @@ CONTENT
 	padding: 2em 0 5em 0;
 	outline: none;
 }
-#introTekst{
+.headingText{
 	margin: 3em 0 5em 0;
 }
-#introTekst h1{
+.headingText h1{
 	font-size: 2em;
 }
 
