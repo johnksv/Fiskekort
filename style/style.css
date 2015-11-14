@@ -52,7 +52,7 @@ p{
 a{
 	text-decoration:none;
 }
-a:hover{
+footer a:hover, .content-1 a:hover{
 	text-decoration:underline;
 }
 hr{
