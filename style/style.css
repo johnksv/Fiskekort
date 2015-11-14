@@ -52,6 +52,9 @@ p{
 a{
 	text-decoration:none;
 }
+footer a:hover, #content-1 a:hover{
+	text-decoration:underline;
+}
 hr{
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -258,6 +261,7 @@ BANNER
 	color: black;
 	background-color: #CFCFCF;
 	outline: none;
+	text-decoration:none;
 }
 
 #readBtn{
