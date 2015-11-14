@@ -188,51 +188,19 @@ nav{
 Language box
 ***************/
 
-#lang{
-	
-	margin-top:1em;
-	height:2em;
-	overflow:hidden; 
-	background-color: #23476b;
-	
-	-webkit-transition: all 0.5s ease; /* WebKit */
-	-moz-transition: all 0.5s ease; /* Firefox */
-	-o-transition: all 0.5s ease; /* Opera */
-	transition: all 0.5s ease; /* Standard */
-}
+
 #langBox{
 	flex-direction:column;
 	justify-content:space-between;
-	height:4em;
-}
-#lang:hover{
 }
 .langBtn{
-
 	color:white;
 	flex-direction: row;
 	padding: 0.5em;
 	cursor:pointer;
-
 	z-index:1;
-	-webkit-transition: all 0.5s ease; /* WebKit */
-	-moz-transition: all 0.5s ease; /* Firefox */
-	-o-transition: all 0.5s ease; /* Opera */
-	transition: all 0.5s ease; /* Standard */
 }
-#langBackground{
-	position:absolute;
-	right:0;
-	z-index:0;
-	width:12em;
-	height:0em;
-	background-color: rgba(0,0,0,0.4);
-	-webkit-transition: height 0.5s ease; /* WebKit */
-	-moz-transition: height 0.5s ease; /* Firefox */
-	-o-transition: height 0.5s ease; /* Opera */
-	transition: height 0.5s ease; /* Standard */
 
-}
 .langBtn:hover{
 	background-color: rgba(256,256,256,0.2);
 }
@@ -367,6 +335,9 @@ Media Queris
 	header{
 		height:auto;
 	}
+	#logo{
+	  width: 25%;
+	}
 
 	nav{
 		width:100%;
@@ -381,17 +352,11 @@ Media Queris
 	.navbutton{ 
 		width:33%;
 	}
-	#langBackground{
-		display:none;
-	}
 
 	#langBox{
 		flex-direction: row;
-    	height:2em;
 		font-size:1.25em;
-	}
-	#lang{
-		height:2.5em;
+		align-self: center;
 	}
 
 	.col-2 img{
@@ -443,16 +408,9 @@ Media Queris
 		width:100%;
 	}
 
-	#lang{
-		width:100%;
-		flex-direction: row;
-		justify-content: space-between;
-		margin:0 1em 1em 0;
-		margin-top:0;
-
-		overflow: hidden;
-	}
 	#langBox{
+		width:100%;
+		margin: 0.5em 0 1em 0;
     	justify-content: space-around;
 	}
 	.active{

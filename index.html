@@ -38,7 +38,7 @@
 
 					<!-- Navigation bar -->
 					<nav>
-						<a id="showHideMenuBtn" class="button" onClick="showMobileMenu()">Vis meny</a>
+						<a id="showHideMenuBtn" class="navbutton" onClick="showMobileMenu()">Vis meny</a>
 						<div id="menuBtns" class="flex">
 							<a class="navbutton active" href="#">Forside</a>
 							<a class="navbutton" href="grunneiere/">For grunneiere</a>	
@@ -47,18 +47,16 @@
 					</nav>
 					
 					<!-- Language chooser -->
-					<div id="lang">
-						<div id="langBox" class="flex">
-							<a id="nor" class="langBtn flex" onclick="showLang()" title="Bytt språk til Norsk">
-								<img class="flag" src="images/norwegian.png" alt="">
-								Norsk
-							</a>
-							<a id="eng" class="langBtn flex" onfocus="showLang()"  href="index-en.html" title="Change language to English">
-								<img class="flag" src="images/usa.png" alt="">
-								English
-							</a>
-						</div> <!-- End of #langBox-->
-					</div> <!-- End of #lang -->
+					<div id="langBox" class="flex">
+						<a id="nor" class="langBtn flex" title="Siden vises på norsk">
+							<img class="flag" src="images/norwegian.png" alt="">
+							Norsk
+						</a>
+						<a id="eng" class="langBtn flex" href="index-en.html" title="Change language to English">
+							<img class="flag" src="images/usa.png" alt="">
+							English
+						</a>
+					</div> <!-- End of #langBox-->
 				</div> <!-- End of .wrapper -->
 			</header>
 			<div id="imgMobil"></div>				
@@ -72,7 +70,7 @@
 							<span class="text-shadow">Aldri før har det vært enklere å kjøpe fiskekort.</span>
 							<!-- Buttons at image -->
 							<div class="buttonContainer">
-								<a class="button" href="lastNed/" onfocus="showLang()">Last ned app</a>
+								<a class="button" href="lastNed/">Last ned app</a>
 								<a class="button" id="readBtn" href="#content-1">Les mer</a>
 							</div> <!-- End of #bannerbtns -->
 						</div> <!-- End of #col-2 -->
@@ -112,7 +110,7 @@
 							<h2>Finn fiskevann som oppfyller dine krav</h2>
 							<p>Hvert fiskevann har hver sine restriksjoner. Fisketyper i vannet, og når på året det er lov å fiske kan ofte variere. Fiskekort på mobil setter deg i høysetet. På en lett måte kan du finne ut hvilke fiskevann som tillater fluefiske, otring, eller hvilke fiskevann som inneholder røy, ørret osv. Alt ved hjelp av vårt søkfilter.</p>
 							<div class="buttonContainer">
-								<a class="button" href="lastNed/" onfocus="showLang()">Last ned app</a>
+								<a class="button" href="lastNed/">Last ned app</a>
 							</div>
 							<!-- <img src="imagesApp/iPhonesok.png" alt="Bilde som viser hvordan søk på fiskevann fungerer.."> -->
 						</div> <!-- End of #frontPageText -->
