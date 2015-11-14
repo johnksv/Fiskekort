@@ -1,22 +1,33 @@
 /**************************************
 
 	TABLE OF CONTENT:
-		Universale tags
-		Classes and ID
-		Columns
+		Standard tags
+
+		Global classes
+			Layout
+			Text
+			Buttons	
+		
+		Before header
+
 		Header
-		Mobile menu
-		Banner
-		Content
+			Logo
+			Navigation
+			Language box
+
+		Body
+			Bannersection
+			Homepage
+			Downloadpage
+		
 		Footer
+
 		Media Queries
 
 ***************************************/
 
-
-
 /***************
-Universale Tags
+Standard tags
 ***************/
 body{
 	background-image: url("../images/lake.jpg");
@@ -65,7 +76,13 @@ li{
 
 /*********************************************
 Global classes
+	Layout
+	Text
+	Buttons
 *********************************************/
+/***************
+Layout
+****************/
 .flex{
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -96,6 +113,15 @@ Global classes
 	width:95%;
 }
 
+/***************
+Text
+****************/
+.headingText{
+	margin: 3em 0 5em 0;
+}
+.headingText h1{
+	font-size: 2em;
+}
 .textCenter{
 	text-align: center;
 }
@@ -107,6 +133,25 @@ Global classes
     1px 1px 3px #000; 
 }
 
+/***************
+Buttons
+****************/
+.buttonContainer{
+	margin-top: 3em;
+}
+
+.button{
+	color: white;
+    padding: 1em 5%;
+    background-color: #861B23;
+    border: 1px solid black;
+}
+.button:hover, .button:focus{
+	color: black;
+	background-color: #CFCFCF;
+	outline: none;
+	text-decoration:none;
+}
 .active{
 	background: -webkit-linear-gradient(#23476B 2.5em, #861B23 1px);
   	background: -o-linear-gradient(#23476B 2.5em, #861B23 1px);
@@ -233,9 +278,24 @@ Language box
 	margin-right: 0.5em;
 }
 
+/*********************************************
+Body
+	Bannersection
+	Homepage
+	Downloadpage
+*********************************************/
+
+#content-1{
+	background-color:#F1F1F1;
+	width:90%;
+	margin:auto;
+	border-radius:0.3em;
+	padding: 2em 0 5em 0;
+	outline: none;
+}
 
 /***************
-BANNER
+Banner section
 ***************/
 #banner{
 	width:100%;	
@@ -254,30 +314,14 @@ BANNER
 	font-size:1em;
 }
 
-.buttonContainer{
-	margin-top: 3em;
-}
-
-.button{
-	color: white;
-    padding: 1em 5%;
-    background-color: #861B23;
-    border: 1px solid black;
-}
-.button:hover, .button:focus{
-	color: black;
-	background-color: #CFCFCF;
-	outline: none;
-	text-decoration:none;
-}
 
 #readBtn{
 	margin-left:13%;
 }
-/***************
-CONTENT
-***************/
 
+/***************
+Homepage
+***************/
 #frontPageImg {
     width: 100%;
 }
@@ -288,24 +332,8 @@ CONTENT
     width: 70%;
 }
 
-
-#content-1{
-	background-color:#F1F1F1;
-	width:90%;
-	margin:auto;
-	border-radius:0.3em;
-	padding: 2em 0 5em 0;
-	outline: none;
-}
-.headingText{
-	margin: 3em 0 5em 0;
-}
-.headingText h1{
-	font-size: 2em;
-}
-
 /***************
-Download page
+Downloadpage
 ***************/
 .downLoadImg{
 	width:30% !important;
@@ -314,9 +342,9 @@ Download page
 	display:block;
 }
 		
-/***************
-FOOTER
-***************/
+/*********************************************
+Footer
+*********************************************/
 footer{
 	background-color:#aaaaaa;
 	height:auto;
@@ -335,72 +363,24 @@ footer .flex{
 	display:none;
 }
 
-/***************
-Media Queris
-***************/
+/*********************************************
+Media Queries
+*********************************************/
 @media screen and (max-width:1200px){
-	.navbutton{
-		width: 30%;
-	}
 	nav{
 		width: 65%;
 	}
+	.navbutton{
+		width: 30%;
+	}
 }
 @media screen and (max-width:1024px){
-	
-	header div.wrapper{
-		justify-content: space-between;
-		flex-wrap: wrap;
-	}
-
-	[id*="content-"] .wrapper{
-		flex-direction: column;
-	}
-	header{
-		height:auto;
-	}
-	#logo{
-	  width: 25%;
-	}
-
-	nav{
-		width:100%;
-		margin:0;
-		order:3;
-		border-top:1px solid white;
-	}
-	#menuBtns{
-		justify-content: space-around;
-	}
-
-	.navbutton{ 
-		width:33%;
-	}
-
-	#langBox{
-		flex-direction: row;
-		font-size:1.25em;
-		align-self: center;
-	}
-
-	.col-2 img{
-		width:49%;
-	}
-
-	#frontPageImg img {
-    width: 49%;
-	}
-	#frontPageText {
-	    width: 100%;
-	}
-
-	[class*="col"]{
+	.col-1, .col-2{
 		width: 100%;
 		margin: 0;
 	}
-	footer [class*="col"]{
-		width: 50%;
-		margin: 0;
+	.col-2 img{
+		width:49%;
 	}
 	#backgroundMobil{
 		display:block;
@@ -411,15 +391,68 @@ Media Queris
 		min-width:180vh;
 		z-index:-1;
 	}
+
+	header div.wrapper{
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	header{
+		height:auto;
+	}
+	nav{
+		width:100%;
+		margin:0;
+		order:3;
+		border-top:1px solid white;
+	}
+	#menuBtns{
+		justify-content: space-around;
+	}
+	.navbutton{ 
+		width:33%;
+	}
+
+	#logo{
+	 	width: 25%;
+	}
+	#langBox{
+		flex-direction: row;
+		font-size:1.25em;
+		align-self: center;
+	}
+
+	#content-1 .wrapper{
+		flex-direction: column;
+	}
+	
+	#frontPageImg img {
+    	width: 49%;
+	}
+	#frontPageText {
+	    width: 100%;
+	}
+
+	footer .col-1, footer .col-2{
+		width: 50%;
+		margin: 0;
+	}
 }
 
 @media screen and (max-width:550px){
 	.mobileOrder-1{
-	order:1;
+		order:1;
 	}
 	.mobileOrder-2{
 		order:2;
 	}
+
+	.col-1 img{
+		display:inline;
+	}
+	.col-2 img{
+		width:49%;
+	}
+
 	#backgroundMobil{
 		min-width:0;
 		width:850px;
@@ -433,43 +466,17 @@ Media Queris
 	header{
 		padding-bottom: 1em;
 	}
+	/***************
+	nav - mobile menu
+	***************/
 	nav{
 		border:none;
 	}
-	#logo{
-		width:100%;
+	.navbutton{
+		width:80%;
+		margin:auto;
+		border-top:1px solid white;
 	}
-
-	#langBox{
-		width:100%;
-		margin: 0.5em 0 1em 0;
-    	justify-content: space-around;
-	}
-
-
-
-	#content-1{
-		width:100%;
-		border-radius:0;
-	}
-	#bannerBox{
-		margin: 0;
-	}
-	footer{
-		width:100%;
-		margin:0 auto 0 auto;
-		border-radius:0;
-	}
-	footer [class*="col"]{
-		width: 100%;
-		margin: 0;
-	}
-
-	
-
-	/***************
-	MOBILE MENU
-	***************/
 	.active{
 		/*Removes background on active button menu*/
 		background: url();
@@ -488,32 +495,52 @@ Media Queris
 	  	-moz-transition: max-height 1s ease; /* WebKit */
 	  	-o-transition: max-height 1s ease; /* Opera */
 	  	transition: max-height 1s ease; /* Standard */
-
 	}
-	
-	
+
 	.visible{
 		max-height:200px !important;
 	}
 
+
+	/***************
+	Logo and langbox
+	***************/
+	#logo{
+		width:100%;
+	}
+
+	#langBox{
+		width:100%;
+		margin: 0.5em 0 1em 0;
+    	justify-content: space-around;
+	}
+
+
 	/********
 	Content
 	*******/
-	.navbutton{
-		width:80%;
-		margin:auto;
-		border-top:1px solid white;
+	#content-1{
+		width:100%;
+		border-radius:0;
+	}
+	#bannerBox{
+		margin: 0;
 	}
 
 	.readBtn{
 		margin-left:15%;
 	}
 
-	.col-1 img{
-		display:inline;
+	/********
+	Footer
+	*******/
+	footer{
+		width:100%;
+		margin:0 auto 0 auto;
+		border-radius:0;
 	}
-
-	.col-2 img{
-		width:49%;
+	footer [class*="col"]{
+		width: 100%;
+		margin: 0;
 	}
 }
