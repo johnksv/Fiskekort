@@ -1,9 +1,14 @@
 /*******************************
 	Load backgroundimage for mobil
-	Dirtyhack for student server..
+	Dirty fix for student server..
+	On a normal server src="/images/lake.jpg" would be enough..
+
+	We could also have used an dynamic link, aslong the files is inside the folder "Fiskekort"
+		var str = window.location.href;
+		var result = str.substr(0,str.indexOf("Fiskekort")+9);
+		src="'+result+'/images/lake.jpg"
 *******************************/
-var str = window.location.href;
-var result = str.substr(0,str.indexOf("Fiskekort")+9);
+
 document.getElementById("imgMobil").innerHTML = '<img id="backgroundMobil" src="'+result+'/images/lake.jpg" alt="">';
 
 /*******************************
