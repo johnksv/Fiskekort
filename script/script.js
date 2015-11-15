@@ -9,7 +9,7 @@
 		src="'+result+'/images/lake.jpg"
 *******************************/
 
-document.getElementById("backgroundImgMobile").innerHTML = '<img id="backgroundMobil" src="/~3050XX/images/lake.jpg" alt="">';
+document.getElementById("backgroundImgMobile").innerHTML = '<img id="backgroundMobil" src="/~3050XX/Fiskekort/images/lake.jpg" alt="">';
 
 /*******************************
 	VARIABLES FOR FUNCTIONS
